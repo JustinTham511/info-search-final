@@ -1,0 +1,3451 @@
+
+    <shreddit-async-loader bundleName="comment_body_header">
+      <comment-body-header
+        class="block px-md xs:px-0 bg-[color:var(--shreddit-content-background)] text-tone-1"
+      >
+        
+        <shreddit-async-loader bundleName="shreddit_sort_dropdown">
+          <div class="flex items-center box-border py-sm">
+            <span class="lg:mr-2xs text-neutral-content-weak text-12"> Sort by: </span>
+            <shreddit-sort-dropdown
+              class="nd:hidden"
+              header-text="Sort by"
+              telemetry-source="comment_sort"
+              trigger-id="comment-sort-button"
+            >
+              <div slot="selected-item">Best</div>
+              <div slot="tooltip-content">
+        Open comment sort options
+      </div>
+              <div slot="dropdown-items">
+                
+      <data value="CONFIDENCE">
+        <li rpl rpl-selected
+      class="relative list-none mt-0 "
+      role="presentation">
+      <a
+      class="flex justify-between px-md gap-[0.5rem] text-secondary-onBackground bg-neutral-background-selected hover:bg-neutral-background-selected hover:bg-neutral-background-hover hover:no-underline cursor-pointer  py-xs  -outline-offset-1  no-underline"
+      href="?sort=confidence"
+      role="menuitem"
+      style="padding-right: 16px"
+      >
+    <span class="flex items-center gap-xs min-w-0 shrink">
+       <span class="flex shrink-0 items-center justify-center h-xl w-xl text-20 leading-4">
+            <icon-best  class="active icon"></icon-best>
+          </span>
+      
+      <span class="flex flex-col justify-center min-w-0 shrink py-[var(--rem6)]">
+        <span class="text-14">Best</span>
+        <span class="text-12 text-secondary-weak"></span>
+      </span>
+    </span>
+    <span class="flex items-center shrink-0">
+    <span class="flex items-center justify-center h-lg"></span>
+  </span>
+  </a
+    > 
+    </li>
+      </data>
+    
+      <data value="TOP">
+        <li rpl
+      class="relative list-none mt-0 "
+      role="presentation">
+      <a
+      class="flex justify-between px-md gap-[0.5rem] text-secondary hover:text-secondary-hover active:bg-interactive-pressed hover:bg-neutral-background-hover hover:no-underline cursor-pointer  py-xs  -outline-offset-1  no-underline"
+      href="?sort=top"
+      role="menuitem"
+      style="padding-right: 16px"
+      >
+    <span class="flex items-center gap-xs min-w-0 shrink">
+       <span class="flex shrink-0 items-center justify-center h-xl w-xl text-20 leading-4">
+            <icon-top  class="icon"></icon-top>
+          </span>
+      
+      <span class="flex flex-col justify-center min-w-0 shrink py-[var(--rem6)]">
+        <span class="text-14">Top</span>
+        <span class="text-12 text-secondary-weak"></span>
+      </span>
+    </span>
+    <span class="flex items-center shrink-0">
+    <span class="flex items-center justify-center h-lg"></span>
+  </span>
+  </a
+    > 
+    </li>
+      </data>
+    
+      <data value="NEW">
+        <li rpl
+      class="relative list-none mt-0 "
+      role="presentation">
+      <a
+      class="flex justify-between px-md gap-[0.5rem] text-secondary hover:text-secondary-hover active:bg-interactive-pressed hover:bg-neutral-background-hover hover:no-underline cursor-pointer  py-xs  -outline-offset-1  no-underline"
+      href="?sort=new"
+      role="menuitem"
+      style="padding-right: 16px"
+      >
+    <span class="flex items-center gap-xs min-w-0 shrink">
+       <span class="flex shrink-0 items-center justify-center h-xl w-xl text-20 leading-4">
+            <icon-new  class="icon"></icon-new>
+          </span>
+      
+      <span class="flex flex-col justify-center min-w-0 shrink py-[var(--rem6)]">
+        <span class="text-14">New</span>
+        <span class="text-12 text-secondary-weak"></span>
+      </span>
+    </span>
+    <span class="flex items-center shrink-0">
+    <span class="flex items-center justify-center h-lg"></span>
+  </span>
+  </a
+    > 
+    </li>
+      </data>
+    
+      <data value="CONTROVERSIAL">
+        <li rpl
+      class="relative list-none mt-0 "
+      role="presentation">
+      <a
+      class="flex justify-between px-md gap-[0.5rem] text-secondary hover:text-secondary-hover active:bg-interactive-pressed hover:bg-neutral-background-hover hover:no-underline cursor-pointer  py-xs  -outline-offset-1  no-underline"
+      href="?sort=controversial"
+      role="menuitem"
+      style="padding-right: 16px"
+      >
+    <span class="flex items-center gap-xs min-w-0 shrink">
+       <span class="flex shrink-0 items-center justify-center h-xl w-xl text-20 leading-4">
+            <icon-controversial  class="icon"></icon-controversial>
+          </span>
+      
+      <span class="flex flex-col justify-center min-w-0 shrink py-[var(--rem6)]">
+        <span class="text-14">Controversial</span>
+        <span class="text-12 text-secondary-weak"></span>
+      </span>
+    </span>
+    <span class="flex items-center shrink-0">
+    <span class="flex items-center justify-center h-lg"></span>
+  </span>
+  </a
+    > 
+    </li>
+      </data>
+    
+      <data value="QA">
+        <li rpl
+      class="relative list-none mt-0 "
+      role="presentation">
+      <a
+      class="flex justify-between px-md gap-[0.5rem] text-secondary hover:text-secondary-hover active:bg-interactive-pressed hover:bg-neutral-background-hover hover:no-underline cursor-pointer  py-xs  -outline-offset-1  no-underline"
+      href="?sort=qa"
+      role="menuitem"
+      style="padding-right: 16px"
+      >
+    <span class="flex items-center gap-xs min-w-0 shrink">
+       <span class="flex shrink-0 items-center justify-center h-xl w-xl text-20 leading-4">
+            <icon-author  class="icon"></icon-author>
+          </span>
+      
+      <span class="flex flex-col justify-center min-w-0 shrink py-[var(--rem6)]">
+        <span class="text-14">Q&amp;A</span>
+        <span class="text-12 text-secondary-weak"></span>
+      </span>
+    </span>
+    <span class="flex items-center shrink-0">
+    <span class="flex items-center justify-center h-lg"></span>
+  </span>
+  </a
+    > 
+    </li>
+      </data>
+    
+              </div>
+            </shreddit-sort-dropdown>
+          </div>
+        </shreddit-async-loader>
+      
+  
+    <faceplate-tracker
+      action="click"
+      noun="button"
+      source="shreddit_comment_count_button"
+      class="flex item-center xs:w-fit mb-sm mt-lg"
+    >
+      <button rpl
+      class="w-full xs:w-auto
+button-medium pl-[var(--rem10)] pr-[var(--rem14)]
+button-bordered
+
+
+
+button inline-flex items-center justify-center ">
+      <span
+      class="flex items-center justify-center">
+      <span class="flex mr-xs"><svg rpl
+      fill="currentColor"
+      height="20"
+      icon-name="add-outline"
+      viewBox="0 0 20 20"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 9.375h-8.375V1h-1.25v8.375H1v1.25h8.375V19h1.25v-8.375H19v-1.25Z"></path>
+    </svg></span>
+      <span class="flex items-center gap-xs">Add a Comment</span>
+    </span>
+    
+    
+    </button>
+    </faceplate-tracker>
+  
+        
+      </comment-body-header>
+    </shreddit-async-loader>
+   
+    <faceplate-batch target="#comment-tree" size="4">
+       <faceplate-tracker
+    source="post"
+    action="view"
+    noun="comments"
+  >
+    <shreddit-comment-tree
+      id="comment-tree"
+      subreddit-prefixed-name="r/explainlikeimfive"
+      is-shredtop-pdp="true"
+      totalComments="85"
+    >
+      <div id="next-comment"></div>
+      
+    <shreddit-comment
+      author="RhynoD"
+      thingId="t1_kb51qlx"
+      depth="0"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb51qlx/"
+      reload-url="/svc/shreddit/comment/t1_kb51qlx?depth=0&amp;isLastRenderedNode=false&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=true"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      class="pt-md px-md xs:px-0"
+      is-shredtop-pdp="true"
+      has-rendered-comments="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="RhynoD"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/RhynoD/"
+      class="flex items-center mr-sm"
+      aria-label="u/RhynoD avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl">
+      <span
+    class="inline-flex items-center justify-center"
+    rpl>
+    
+    <span class="inline-flex relative  fp-avatar-container box-border rounded-full w-[2rem] h-[2rem] isolate"
+    ><span
+      style="background: var(--color-avatar-gradient)"
+      class="rounded-full box-border border-solid border-neutral-background border relative h-100 w-100 justify-center ">
+      <span
+      class="absolute left-0 z-[2] bottom-0 inline-flex shrink-0 justify-center w-[2rem] h-[2rem]">
+      <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 121 122"
+    xmlns="http://www.w3.org/2000/svg"
+    class="overflow-hidden">
+    <defs>
+      <clipPath id="5f7a1b757b399">
+        <path
+          d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z" />
+      </clipPath>
+    </defs>
+    <image
+      href="https://styles.redditmedia.com/t5_1s9d57/styles/profileIcon_snoo1888199b-bddc-47a5-8c5c-83668bcbd0ec-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=de916e35788fc7c853e9c9757715919d7391e884"
+      alt="User Avatar"
+      clip-path="url(#5f7a1b757b399)"
+      height="100%"
+      width="100%" />
+  </svg>
+    </span>
+    </span>
+  </span></span
+  >
+    </div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/RhynoD" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="RhynoD"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/RhynoD/"
+      aria-label="u/RhynoD avatar"
+    >
+      RhynoD
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/RhynoD" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb51qlx"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb51qlx/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T17:19:26.462000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb51qlx"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb51qlx-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <blockquote>
+    <p>
+    If we can already accelerate some particles to 99. 99999 c, what could be faster?
+  </p>
+  </blockquote><p>
+    99.999999c. I&#39;m not being facetious, it takes exponentially more energy to increase in velocity as you approach <em>c</em>. The planck era is so ridiculously energetic, <em>so</em> hot, that even the energy of 99.99999% of <em>c</em> isn&#39;t enough to replicate that time.
+  </p><p>
+    A longer particle accelerator allows the particles to be accelerated more before they hit. The particles have inertia just like anything else and they want to continue going in a straight line. The magnets that keep them inside the loop can only be so strong. The tighter the turn is, the slower the particles have to be to avoid crashing into the walls. Bigger loops have easier turns, so the particles can be accelerated to higher speeds and stay in the accelerator.
+  </p><p>
+    Faster particles means more energy when they collide, which in turn means getting closer to the energies in the planck era.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+       <faceplate-perfmark
+    name="first-comment-meaningful-paint"
+  ></faceplate-perfmark>
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb51qlx/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb51qlx"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb51qlx/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb51qlx"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_es0cw"
+      author-name="RhynoD"
+      comment-id="t1_kb51qlx"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb51qlx-next-reply"></div>
+            
+    <shreddit-comment
+      author="romanrambler941"
+      thingId="t1_kb63kcw"
+      depth="1"
+      parentId="t1_kb51qlx"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb63kcw/"
+      reload-url="/svc/shreddit/comment/t1_kb63kcw?depth=1&amp;isLastRenderedNode=false&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      is-shredtop-pdp="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="romanrambler941"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/romanrambler941/"
+      class="flex items-center mr-sm"
+      aria-label="u/romanrambler941 avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl">
+      <span
+    class="inline-flex items-center justify-center"
+    rpl>
+    
+    <span class="inline-flex relative  fp-avatar-container box-border rounded-full w-[2rem] h-[2rem] isolate"
+    ><span
+      style="background: var(--color-avatar-gradient)"
+      class="rounded-full box-border border-solid border-neutral-background border relative h-100 w-100 justify-center ">
+      <span
+      class="absolute left-0 z-[2] bottom-0 inline-flex shrink-0 justify-center w-[2rem] h-[2rem]">
+      <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 121 122"
+    xmlns="http://www.w3.org/2000/svg"
+    class="overflow-hidden">
+    <defs>
+      <clipPath id="15dcc6baa0694">
+        <path
+          d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z" />
+      </clipPath>
+    </defs>
+    <image
+      href="https://styles.redditmedia.com/t5_2px19e/styles/profileIcon_snoof97e32da-066d-43e7-8cba-43afc0975c00-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=512a0fed67c347e1df1da888d2f1ab7144615112"
+      alt="User Avatar"
+      clip-path="url(#15dcc6baa0694)"
+      height="100%"
+      width="100%" />
+  </svg>
+    </span>
+    </span>
+  </span></span
+  >
+    </div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/romanrambler941" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="romanrambler941"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/romanrambler941/"
+      aria-label="u/romanrambler941 avatar"
+    >
+      romanrambler941
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/romanrambler941" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb63kcw"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb63kcw/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T21:01:51.849000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb63kcw"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb63kcw-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    To put some actual numbers to this energy increase, a proton moving at .9999999 <em>c</em> (7 digits) has about 3*10<sup>-7</sup> J of kinetic energy. A proton moving at .99999999 <em>c</em> (8 digits) has about 1*10<sup>-6</sup> J of kinetic energy, so about an order of magnitude more.
+  </p><p>
+    I used this <a
+    href="https://www.omnicalculator.com/physics/relativistic-ke"
+    rel="noopener nofollow ugc"
+    target="_blank"
+    >relativistic kinetic energy calculator</a
+  > to determine these values, with 1 atomic mass unit as the mass.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb63kcw/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb63kcw"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb63kcw/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb63kcw"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_6k5m4gqd"
+      author-name="romanrambler941"
+      comment-id="t1_kb63kcw"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb63kcw-next-reply"></div>
+            
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=2"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZDE6dDFfa2I2M2tjdw==" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="5"></faceplate-number> more replies</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="5"></faceplate-number> more replies</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="RigasTelRuun"
+      thingId="t1_kb65g4m"
+      depth="1"
+      parentId="t1_kb51qlx"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb65g4m/"
+      reload-url="/svc/shreddit/comment/t1_kb65g4m?depth=1&amp;isLastRenderedNode=false&amp;hasChildren=false&amp;hasMoreLink=false&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      is-shredtop-pdp="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="RigasTelRuun"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/RigasTelRuun/"
+      class="flex items-center mr-sm"
+      aria-label="u/RigasTelRuun avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl">
+      <span
+    class="inline-flex items-center justify-center"
+    rpl>
+    
+    <span class="inline-flex relative  fp-avatar-container box-border rounded-full w-[2rem] h-[2rem] isolate"
+    ><span
+      style="background: var(--color-avatar-gradient)"
+      class="rounded-full box-border border-solid border-neutral-background border relative h-100 w-100 justify-center ">
+      <span
+      class="absolute left-0 z-[2] bottom-0 inline-flex shrink-0 justify-center w-[2rem] h-[2rem]">
+      <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 121 122"
+    xmlns="http://www.w3.org/2000/svg"
+    class="overflow-hidden">
+    <defs>
+      <clipPath id="600a6e55592d9">
+        <path
+          d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z" />
+      </clipPath>
+    </defs>
+    <image
+      href="https://styles.redditmedia.com/t5_1ymdbq/styles/profileIcon_snoo0780fcc4-8cd5-4b2f-8a51-10edc44770f8-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=c4b84c6bcc2bb30044fc29b6cd9e97f24771e20c"
+      alt="User Avatar"
+      clip-path="url(#600a6e55592d9)"
+      height="100%"
+      width="100%" />
+  </svg>
+    </span>
+    </span>
+  </span></span
+  >
+    </div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/RigasTelRuun" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="RigasTelRuun"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/RigasTelRuun/"
+      aria-label="u/RigasTelRuun avatar"
+    >
+      RigasTelRuun
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/RigasTelRuun" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb65g4m"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb65g4m/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T21:12:52.872000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb65g4m"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs"
+              id="t1_kb65g4m-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    To add on to your point.
+  </p><p>
+    Imagine if a service advertises uptime per year.
+  </p><p>
+    If they say 99% allows for 1% downtime which is just over 3 and a half days. 99.9% has just under 9 hours of allowable downtime.
+  </p><p>
+    99.99 is 52 minutes.
+  </p><p>
+    Orders or magnitude might seem small at first glance but actually have a large impact over all.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb65g4m/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb65g4m"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb65g4m/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb65g4m"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_717tn"
+      author-name="RigasTelRuun"
+      comment-id="t1_kb65g4m"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="Chromotron"
+      thingId="t1_kb60ntr"
+      depth="1"
+      parentId="t1_kb51qlx"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb60ntr/"
+      reload-url="/svc/shreddit/comment/t1_kb60ntr?depth=1&amp;isLastRenderedNode=false&amp;hasChildren=false&amp;hasMoreLink=false&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      is-shredtop-pdp="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="Chromotron"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/Chromotron/"
+      class="flex items-center mr-sm"
+      aria-label="u/Chromotron avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl"><faceplate-img
+    src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png"
+    alt="u/Chromotron avatar"
+    class="rounded-full overflow-hidden"
+    width="32"
+    height="32"
+    
+    loading="lazy"
+    
+    
+  ></faceplate-img></div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/Chromotron" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="Chromotron"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/Chromotron/"
+      aria-label="u/Chromotron avatar"
+    >
+      Chromotron
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/Chromotron" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb60ntr"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb60ntr/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T20:45:06.952000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb60ntr"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs"
+              id="t1_kb60ntr-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    It&#39;s not just strength of the magnets (that could be solved with a smaller ring but more magnets and cooling; so with more money). The acceleration (centripetal force) that keeps them on the circular track causes radiation which takes away energy. At some point this overwhelms any known method of acceleration and becomes almost exponentially more expensive to do.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb60ntr/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb60ntr"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb60ntr/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb60ntr"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_ikwzu"
+      author-name="Chromotron"
+      comment-id="t1_kb60ntr"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      
+    </shreddit-comment>
+  
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=1"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6YzE6dDFfa2I2Z2w3OSx0MV9rYjZkMXQw" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="2"></faceplate-number> more replies</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="2"></faceplate-number> more replies</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="GameUnlucky"
+      thingId="t1_kb507k8"
+      depth="0"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb507k8/"
+      reload-url="/svc/shreddit/comment/t1_kb507k8?depth=0&amp;isLastRenderedNode=false&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      class="pt-md px-md xs:px-0"
+      is-shredtop-pdp="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="GameUnlucky"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/GameUnlucky/"
+      class="flex items-center mr-sm"
+      aria-label="u/GameUnlucky avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl">
+      <span
+    class="inline-flex items-center justify-center"
+    rpl>
+    
+    <span class="inline-flex relative w-[2rem] h-[2rem]"
+    ><div class="absolute h-full w-full" style="transform: scale(0.95)">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="100%"
+      viewBox="0 0 64 64"
+      fill="none">
+      <path
+        d="M29 1.73205C30.8564 0.660254 33.1436 0.660254 35 1.73205L56.7128 14.2679C58.5692 15.3397 59.7128 17.3205 59.7128 19.4641V44.5359C59.7128 46.6795 58.5692 48.6603 56.7128 49.7321L35 62.2679C33.1436 63.3397 30.8564 63.3397 29 62.2679L7.28719 49.7321C5.43078 48.6603 4.28719 46.6795 4.28719 44.5359V19.4641C4.28719 17.3205 5.43078 15.3397 7.28719 14.2679L29 1.73205Z"
+        fill="url(#paint0_diamond_26026_173944)" />
+      <path
+        d="M29 1.73205C30.8564 0.660254 33.1436 0.660254 35 1.73205L56.7128 14.2679C58.5692 15.3397 59.7128 17.3205 59.7128 19.4641V44.5359C59.7128 46.6795 58.5692 48.6603 56.7128 49.7321L35 62.2679C33.1436 63.3397 30.8564 63.3397 29 62.2679L7.28719 49.7321C5.43078 48.6603 4.28719 46.6795 4.28719 44.5359V19.4641C4.28719 17.3205 5.43078 15.3397 7.28719 14.2679L29 1.73205Z"
+        fill="url(#paint1_linear_26026_173944)" />
+      <defs>
+        <radialGradient
+          id="paint0_diamond_26026_173944"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(-6.59974 23.1999) rotate(15.9097) scale(44.5051 21406.7)">
+          <stop stop-color="#1185B5" />
+          <stop offset="0.29452" stop-color="#D7F7FF" />
+          <stop offset="0.526042" stop-color="#5EF6D8" />
+          <stop offset="0.838434" stop-color="#5EF6D8" />
+          <stop offset="0.867246" stop-color="#1990B9" />
+          <stop offset="1" stop-color="#3F9FC6" />
+        </radialGradient>
+        <linearGradient
+          id="paint1_linear_26026_173944"
+          x1="23.5687"
+          y1="22.7061"
+          x2="44.1183"
+          y2="53.4817"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#004E5F" />
+          <stop offset="1" stop-color="#727CD8" stop-opacity="0.81" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+    <span class="absolute h-full w-full left-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="100%"
+      viewBox="0 0 72 72"
+      fill="none">
+      <path
+        d="M34 3.4641C35.2376 2.74957 36.7624 2.74957 38 3.4641L63.1769 18C64.4145 18.7145 65.1769 20.035 65.1769 21.4641V50.5359C65.1769 51.965 64.4145 53.2855 63.1769 54L38 68.5359C36.7624 69.2504 35.2376 69.2504 34 68.5359L8.82309 54C7.58548 53.2855 6.82309 51.965 6.82309 50.5359V21.4641C6.82309 20.035 7.58548 18.7145 8.82309 18L34 3.4641Z"
+        stroke="url(#paint0_diamond_26526_186798)"
+        stroke-width="4"
+        stroke-linejoin="round" />
+      <defs>
+        <radialGradient
+          id="paint0_diamond_26526_186798"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(-7.4247 26.0998) rotate(15.9097) scale(50.0682 24082.5)">
+          <stop stop-color="#1185B5" />
+          <stop offset="0.29452" stop-color="#D7F7FF" />
+          <stop offset="0.526042" stop-color="#5EF6D8" />
+          <stop offset="0.838434" stop-color="#5EF6D8" />
+          <stop offset="0.867246" stop-color="#1990B9" />
+          <stop offset="1" stop-color="#3F9FC6" />
+        </radialGradient>
+      </defs>
+    </svg>
+  </span><div
+    class="absolute h-full w-full"
+    style="transform: translateY(-7%)">
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 120 120"
+      xmlns="http://www.w3.org/2000/svg"
+      class="overflow-hidden">
+      <defs>
+        <clipPath id="3eee3a9671511">
+          <path
+            d="M120 0H0V96H22.0602C22.5169 98.2109 23.896 100.155 25.8949 101.309L56
+          118.691C58.4752 120.12 61.5248 120.12 64 118.691L94.1051 101.309C96.104 100.155 97.4831
+          98.2109 97.9398 96H120V0Z" />
+        </clipPath>
+      </defs>
+      <image
+        href="https://styles.redditmedia.com/t5_9zjulz/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8yMzUzNTMwNA_rare_ef4cf6a4-e1b2-4f12-968c-5fe89bb1f0ee-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=cc935423bf7ada896f46810a9bcb403201892d3a"
+        alt="User Avatar"
+        clip-path="url(#3eee3a9671511)"
+        height="100%"
+        width="100%" />
+    </svg>
+  </div>
+  </span></span
+  >
+    </div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/GameUnlucky" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="GameUnlucky"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/GameUnlucky/"
+      aria-label="u/GameUnlucky avatar"
+    >
+      GameUnlucky
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/GameUnlucky" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb507k8"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb507k8/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T17:10:18.483000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb507k8"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb507k8-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    When an object with mass approaches the speed of light, the Newtonian kinetic energy formula (E = 1/2<em>m</em>v*v) no longer works due to space and time dilatation.
+  </p><p>
+    As an object approaches C, relatively small variation in velocity (like going from 99.9999C to 99.99999C) increases the kinetic energy by A LOT.
+  </p><p>
+    This is why accelerating an object with mass to the speed of light is impossible, the object would need infinite kinetic energy.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb507k8/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb507k8"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb507k8/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb507k8"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_nvhdk3gwd"
+      author-name="GameUnlucky"
+      comment-id="t1_kb507k8"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb507k8-next-reply"></div>
+            
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=1"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZDE6dDFfa2I1MDdrOA==" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="34"></faceplate-number> more replies</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="34"></faceplate-number> more replies</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="woailyx"
+      thingId="t1_kb4ylfa"
+      depth="0"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb4ylfa/"
+      reload-url="/svc/shreddit/comment/t1_kb4ylfa?depth=0&amp;isLastRenderedNode=false&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=true"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      class="pt-md px-md xs:px-0"
+      is-shredtop-pdp="true"
+      has-rendered-comments="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="woailyx"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/woailyx/"
+      class="flex items-center mr-sm"
+      aria-label="u/woailyx avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl"><faceplate-img
+    src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png"
+    alt="u/woailyx avatar"
+    class="rounded-full overflow-hidden"
+    width="32"
+    height="32"
+    
+    loading="lazy"
+    
+    
+  ></faceplate-img></div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/woailyx" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="woailyx"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/woailyx/"
+      aria-label="u/woailyx avatar"
+    >
+      woailyx
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/woailyx" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb4ylfa"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb4ylfa/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T17:00:31.568000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb4ylfa"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb4ylfa-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    More nines would be faster.
+  </p><p>
+    To a regular person who is used to regular numbers, everything after two or three nines sounds like it&#39;s basically 1. But it&#39;s really not. Each nine is a lot more energy. That&#39;s why it makes more sense to think about speeds close to c in terms of the energy of the particle.
+  </p><p>
+    The more energy and momentum a particle has, the harder it is to keep it going in a circle. So you need a bigger circle that doesn&#39;t curve as much.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb4ylfa/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb4ylfa"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb4ylfa/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb4ylfa"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_hufyx7fpp"
+      author-name="woailyx"
+      comment-id="t1_kb4ylfa"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb4ylfa-next-reply"></div>
+            
+    <shreddit-comment
+      author="AdarTan"
+      thingId="t1_kb5hnk7"
+      depth="1"
+      parentId="t1_kb4ylfa"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb5hnk7/"
+      reload-url="/svc/shreddit/comment/t1_kb5hnk7?depth=1&amp;isLastRenderedNode=false&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      is-shredtop-pdp="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="AdarTan"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/AdarTan/"
+      class="flex items-center mr-sm"
+      aria-label="u/AdarTan avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl"><faceplate-img
+    src="https://styles.redditmedia.com/t5_dc1pa/styles/profileIcon_9xli4y6mv2w51.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=0bc419b8dbc8a2beba2dd0a860db11e74cfd52ec"
+    alt="u/AdarTan avatar"
+    class="rounded-full overflow-hidden"
+    width="32"
+    height="32"
+    
+    loading="lazy"
+    
+    
+  ></faceplate-img></div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/AdarTan" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="AdarTan"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/AdarTan/"
+      aria-label="u/AdarTan avatar"
+    >
+      AdarTan
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/AdarTan" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb5hnk7"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb5hnk7/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T18:53:56.029000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb5hnk7"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb5hnk7-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    Every two nines is about 10x more energy, <em>regardless how big those nines are</em>. Going from 0.99c to 0.9999c, tenfold increase in the kinetic energy of the particle for an increase in speed of 0.0099c. Going from 0.99999999c to 0.9999999999c, likewise a tenfold increase in kinetic energy despite the change in velocity only being 0.0000000099c, literally a million times smaller
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb5hnk7/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb5hnk7"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb5hnk7/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb5hnk7"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_h28ew"
+      author-name="AdarTan"
+      comment-id="t1_kb5hnk7"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb5hnk7-next-reply"></div>
+            
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=2"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZDE6dDFfa2I1aG5rNw==" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="6"></faceplate-number> more replies</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="6"></faceplate-number> more replies</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=1"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6YzE6dDFfa2I1bXV2OA==" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="2"></faceplate-number> more replies</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="2"></faceplate-number> more replies</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="ChipotleMayoFusion"
+      thingId="t1_kb57npc"
+      depth="0"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb57npc/"
+      reload-url="/svc/shreddit/comment/t1_kb57npc?depth=0&amp;isLastRenderedNode=false&amp;hasChildren=false&amp;hasMoreLink=false&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      class="pt-md px-md xs:px-0"
+      is-shredtop-pdp="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="ChipotleMayoFusion"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/ChipotleMayoFusion/"
+      class="flex items-center mr-sm"
+      aria-label="u/ChipotleMayoFusion avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl"><faceplate-img
+    src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png"
+    alt="u/ChipotleMayoFusion avatar"
+    class="rounded-full overflow-hidden"
+    width="32"
+    height="32"
+    
+    loading="lazy"
+    
+    
+  ></faceplate-img></div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/ChipotleMayoFusion" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="ChipotleMayoFusion"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/ChipotleMayoFusion/"
+      aria-label="u/ChipotleMayoFusion avatar"
+    >
+      ChipotleMayoFusion
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/ChipotleMayoFusion" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb57npc"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb57npc/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T17:54:22.550000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb57npc"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs"
+              id="t1_kb57npc-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    Smaller size scales mean more energy density, more energy packed up into a small space.
+  </p><p>
+    You can use your fingers to tear apart a hamburger, but not a tiny salt crystal. The electrical properties of water can dissolve that salt crystal, but not tear apart the atoms of the sodium and chlorine. A high energy x-ray can tear the electrons off a chlorine atom, but it can&#39;t break apart the protons and neutrons in the atomic nucleus. A high energy gamma ray can break apart the atomic nucleus, but it cant break the protons apart into quarks, etc....
+  </p><p>
+    To make a particle high energy you need to put it in an environment where it won&#39;t immediately lose energy that you give it, and then you add energy. If you heat up particles they move randomly, and eventually they will hit some wall that is not so hot, cooling off and losing the energy.
+  </p><p>
+    A more clever way is to push them around a race track that is really empty, so they have nothing to hit. The faster the particle goes, the harder it is to turn it so it stays on the race track. If you make the race track bigger it is easier to turn.
+  </p><p>
+    Now your real question: is it any harder to turn a particle going 99% the speed of light vs 99.999999% the speed of light? The answer is yes, as you get closer to the speed of light you need more energy to speed up more, and to change directions. It takes more energy to speed up from 99% to 99.9999% the speed of light than it does to speed up from 0 to 99%. You are still dumping energy into the particle, it just doesn&#39;t go significantly faster from an externally observed distance/time perspective.
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb57npc/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb57npc"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb57npc/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb57npc"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_eetr3"
+      author-name="ChipotleMayoFusion"
+      comment-id="t1_kb57npc"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="JovahkiinVIII"
+      thingId="t1_kb4xvnd"
+      depth="0"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb4xvnd/"
+      reload-url="/svc/shreddit/comment/t1_kb4xvnd?depth=0&amp;isLastRenderedNode=false&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      class="pt-md px-md xs:px-0"
+      is-shredtop-pdp="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="JovahkiinVIII"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/JovahkiinVIII/"
+      class="flex items-center mr-sm"
+      aria-label="u/JovahkiinVIII avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl">
+      <span
+    class="inline-flex items-center justify-center"
+    rpl>
+    
+    <span class="inline-flex relative w-[2rem] h-[2rem]"
+    ><div class="absolute h-full w-full" style="transform: scale(0.95)">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="100%"
+      viewBox="0 0 64 64"
+      fill="none">
+      <path
+        d="M29 1.73205C30.8564 0.660254 33.1436 0.660254 35 1.73205L56.7128 14.2679C58.5692 15.3397 59.7128 17.3205 59.7128 19.4641V44.5359C59.7128 46.6795 58.5692 48.6603 56.7128 49.7321L35 62.2679C33.1436 63.3397 30.8564 63.3397 29 62.2679L7.28719 49.7321C5.43078 48.6603 4.28719 46.6795 4.28719 44.5359V19.4641C4.28719 17.3205 5.43078 15.3397 7.28719 14.2679L29 1.73205Z"
+        fill="url(#paint0_diamond_26026_173944)" />
+      <path
+        d="M29 1.73205C30.8564 0.660254 33.1436 0.660254 35 1.73205L56.7128 14.2679C58.5692 15.3397 59.7128 17.3205 59.7128 19.4641V44.5359C59.7128 46.6795 58.5692 48.6603 56.7128 49.7321L35 62.2679C33.1436 63.3397 30.8564 63.3397 29 62.2679L7.28719 49.7321C5.43078 48.6603 4.28719 46.6795 4.28719 44.5359V19.4641C4.28719 17.3205 5.43078 15.3397 7.28719 14.2679L29 1.73205Z"
+        fill="url(#paint1_linear_26026_173944)" />
+      <defs>
+        <radialGradient
+          id="paint0_diamond_26026_173944"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(-6.59974 23.1999) rotate(15.9097) scale(44.5051 21406.7)">
+          <stop stop-color="#1185B5" />
+          <stop offset="0.29452" stop-color="#D7F7FF" />
+          <stop offset="0.526042" stop-color="#5EF6D8" />
+          <stop offset="0.838434" stop-color="#5EF6D8" />
+          <stop offset="0.867246" stop-color="#1990B9" />
+          <stop offset="1" stop-color="#3F9FC6" />
+        </radialGradient>
+        <linearGradient
+          id="paint1_linear_26026_173944"
+          x1="23.5687"
+          y1="22.7061"
+          x2="44.1183"
+          y2="53.4817"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#004E5F" />
+          <stop offset="1" stop-color="#727CD8" stop-opacity="0.81" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+    <span class="absolute h-full w-full left-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="100%"
+      viewBox="0 0 72 72"
+      fill="none">
+      <path
+        d="M34 3.4641C35.2376 2.74957 36.7624 2.74957 38 3.4641L63.1769 18C64.4145 18.7145 65.1769 20.035 65.1769 21.4641V50.5359C65.1769 51.965 64.4145 53.2855 63.1769 54L38 68.5359C36.7624 69.2504 35.2376 69.2504 34 68.5359L8.82309 54C7.58548 53.2855 6.82309 51.965 6.82309 50.5359V21.4641C6.82309 20.035 7.58548 18.7145 8.82309 18L34 3.4641Z"
+        stroke="url(#paint0_diamond_26526_186798)"
+        stroke-width="4"
+        stroke-linejoin="round" />
+      <defs>
+        <radialGradient
+          id="paint0_diamond_26526_186798"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(-7.4247 26.0998) rotate(15.9097) scale(50.0682 24082.5)">
+          <stop stop-color="#1185B5" />
+          <stop offset="0.29452" stop-color="#D7F7FF" />
+          <stop offset="0.526042" stop-color="#5EF6D8" />
+          <stop offset="0.838434" stop-color="#5EF6D8" />
+          <stop offset="0.867246" stop-color="#1990B9" />
+          <stop offset="1" stop-color="#3F9FC6" />
+        </radialGradient>
+      </defs>
+    </svg>
+  </span><div
+    class="absolute h-full w-full"
+    style="transform: translateY(-7%)">
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 120 120"
+      xmlns="http://www.w3.org/2000/svg"
+      class="overflow-hidden">
+      <defs>
+        <clipPath id="de34ad01a1ad7">
+          <path
+            d="M120 0H0V96H22.0602C22.5169 98.2109 23.896 100.155 25.8949 101.309L56
+          118.691C58.4752 120.12 61.5248 120.12 64 118.691L94.1051 101.309C96.104 100.155 97.4831
+          98.2109 97.9398 96H120V0Z" />
+        </clipPath>
+      </defs>
+      <image
+        href="https://styles.redditmedia.com/t5_7dw9q/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV80MTYwNDE_rare_431d881d-5bca-466b-86c7-ac53a5f5a661-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=ed4bf6c97106e692a79db74f1fe8a82da4537d51"
+        alt="User Avatar"
+        clip-path="url(#de34ad01a1ad7)"
+        height="100%"
+        width="100%" />
+    </svg>
+  </div>
+  </span></span
+  >
+    </div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/JovahkiinVIII" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="JovahkiinVIII"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/JovahkiinVIII/"
+      aria-label="u/JovahkiinVIII avatar"
+    >
+      JovahkiinVIII
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/JovahkiinVIII" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb4xvnd"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb4xvnd/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T16:56:13.352000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb4xvnd"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb4xvnd-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    “We’ve had 99.99999 C, but what about 99.99999999999999C?”
+  </p>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb4xvnd/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb4xvnd"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb4xvnd/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb4xvnd"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_2exnoh"
+      author-name="JovahkiinVIII"
+      comment-id="t1_kb4xvnd"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb4xvnd-next-reply"></div>
+            
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=1"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZDE6dDFfa2I0eHZuZA==" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="1"></faceplate-number> more reply</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="1"></faceplate-number> more reply</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+    <shreddit-comment
+      author="adamjan2000"
+      thingId="t1_kb5bk63"
+      depth="0"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb5bk63/"
+      reload-url="/svc/shreddit/comment/t1_kb5bk63?depth=0&amp;isLastRenderedNode=true&amp;hasChildren=true&amp;hasMoreLink=true&amp;hasRenderedComments=false"
+      score="1"
+      postId="1860id3"
+      content-type="text"
+      class="pt-md px-md xs:px-0"
+      is-shredtop-pdp="true"
+      is-last-rendered-node="true"
+      has-more-link="true"
+      moderation-verdict=""
+    >
+      <div slot="commentAvatar">
+        
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="adamjan2000"
+    >
+      <div class="flex flex-row items-center">
+      <faceplate-tracker
+            source="post_detail"
+            action="click"
+            noun="comment_author_avatar"
+            class="flex items-center"
+            ><a
+      href="/user/adamjan2000/"
+      class="flex items-center mr-sm"
+      aria-label="u/adamjan2000 avatar"
+      ><div class="flex items-center justify-center w-lg h-lg xs:w-xl xs:h-xl"><faceplate-img
+    src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png"
+    alt="u/adamjan2000 avatar"
+    class="rounded-full overflow-hidden"
+    width="32"
+    height="32"
+    
+    loading="lazy"
+    
+    
+  ></faceplate-img></div></a
+    >
+          </faceplate-tracker>
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/adamjan2000" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  
+      </div>
+      <div slot="commentMeta" class="py-[2px]">
+        
+      <div class="flex items-center pr-xs overflow-hidden">
+        <div class="flex flex-col overflow-hidden">
+          <div class="flex flex-none flex-row flex-nowrap">
+            
+     
+    <faceplate-hovercard
+      enter-delay="500"
+      leave-delay="150"
+      position="bottom-start"
+      data-id="user-hover-card" close-on-track
+      aria-label="adamjan2000"
+    >
+      <div class="flex flex-row items-center overflow-hidden">
+      
+      <faceplate-tracker
+        source="post_detail"
+        action="click"
+        noun="comment_author"
+        class="contents"
+      >
+         <a
+      class="truncate font-bold text-neutral-content-strong text-12 hover:underline"
+      href="/user/adamjan2000/"
+      aria-label="u/adamjan2000 avatar"
+    >
+      adamjan2000
+    </a>
+      </faceplate-tracker>
+    
+    </div>
+      <div slot="content">
+        <faceplate-partial src="/svc/shreddit/user-hover-card/adamjan2000" loading="programmatic">
+          <div class="w-5xl h-4xl flex items-center justify-center">
+            <faceplate-progress value="20" class="animate-spin"></faceplate-progress>
+          </div>
+        </faceplate-partial>
+      </div>
+    </faceplate-hovercard>
+  <span class="inline-flex ml-2xs"><span class="inline-flex">
+      <shreddit-comment-author-modifier-icon
+        thing-id="t1_kb5bk63"
+      ></shreddit-comment-author-modifier-icon>
+    </span></span>
+    
+  
+    
+  <span class="inline-block my-0 mx-2xs text-12 text-neutral-content-weak">•</span>
+ <a
+      href="/r/explainlikeimfive/comments/1860id3/comment/kb5bk63/"
+      class="text-neutral-content-weak text-12 hover:no-underline"
+      rel="nofollow noopener noreferrer"
+      ><faceplate-timeago
+      class="text-neutral-content-weak text-12"
+      ts="2023-11-28T18:17:38.620000+0000"
+      short
+    ></faceplate-timeago></a
+    >
+    
+  
+            
+      <shreddit-comment-badges
+        thing-id="t1_kb5bk63"
+        is-shredtop-pdp="true"
+      ></shreddit-comment-badges>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+    
+      </div>
+      
+      
+      
+      
+      <div
+              class="md ml-[28px] xs:ml-xl text-14 rounded-[8px] pb-2xs
+  relative
+  before:content-[&#39;&#39;]
+  before:absolute
+  before:pointer-events-none
+  before:border-l-[1px]
+  before:border-r-[0px]
+  before:border-y-0
+  before:border-tone-4
+  before:border-solid
+  before:top-0
+  before:left-[-16.5px]
+  xs:before:left-[-15.5px]
+  before:h-[calc(100%+7px)]"
+              id="t1_kb5bk63-comment-rtjson-content"
+              slot="comment"
+            >
+              <div
+    id="-post-rtjson-content"
+    class="py-0 mx-sm inline-block max-w-full"
+    style="--emote-size: 20px"
+  >
+    <p>
+    We&#39;d need it that huge to smash particles with enough energy so that the resulting plasma would have sufficient energy density.
+  </p><p>
+    Why we can&#39;t do it with current technology? Two reasons:
+  </p><ol>
+      <li>
+    <p>
+    Linear accelerators don&#39;t have enough power, so we need circular ones. To keep whatever we&#39;re accelerating in the circular trajectory, we need strong magnetic fields. And current technology can generate them only so high.
+  </p>
+  </li><li>
+    <p>
+    Particles loose energy while accelerating (and that includes turning) through the process called Bremsstrahlung - they literally radiate it away. So we have upper limit on acceleration, and thus accelerator radius, before particle looses more energy during one round than we can pump into it by accelerating it.
+  </p>
+  </li>
+    </ol>
+  </div>
+            </div>
+            
+            
+            
+    
+      
+      
+    <shreddit-comment-action-row
+      slot="actionRow"
+      score="1"
+      is-shredtop-pdp="true"
+      is-desktop-viewport="true"
+      permalink="/r/explainlikeimfive/comments/1860id3/comment/kb5bk63/"
+      moderation-verdict=""
+      class="block ml-xl"
+      comment-id="t1_kb5bk63"
+      vote-state="NONE"
+    >
+      <faceplate-tracker
+    source="post_detail"
+    action="click"
+    noun="reply_comment"
+    slot="comment-reply"
+  >
+    <button rpl
+      class="button border-md  text-12 button-plain disabled:text-interactive-content-disabled text-secondary-weak inline-flex items-center 
+       px-sm
+       hover:text-secondary hover:bg-secondary-background-hover hover:border-secondary-background-hover
+      "
+      style="height: var(--size-button-sm-h); font: var(--font-button-sm)">
+      <span class="flex items-center">
+      <span class="flex text-16 mr-[var(--rem6)]"><svg rpl
+      aria-hidden="true"
+      fill="currentColor"
+      height="16"
+      icon-name="comment-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.725 19.872a.718.718 0 0 1-.607-.328.725.725 0 0 1-.118-.397V16H3.625A2.63 2.63 0 0 1 1 13.375v-9.75A2.629 2.629 0 0 1 3.625 1h12.75A2.63 2.63 0 0 1 19 3.625v9.75A2.63 2.63 0 0 1 16.375 16h-4.161l-4 3.681a.725.725 0 0 1-.489.191ZM3.625 2.25A1.377 1.377 0 0 0 2.25 3.625v9.75a1.377 1.377 0 0 0 1.375 1.375h4a.625.625 0 0 1 .625.625v2.575l3.3-3.035a.628.628 0 0 1 .424-.165h4.4a1.377 1.377 0 0 0 1.375-1.375v-9.75a1.377 1.377 0 0 0-1.374-1.375H3.625Z"></path>
+    </svg></span>
+      <span> Reply </span>
+    </span>
+    <faceplate-screen-reader-content>
+          reply
+        </faceplate-screen-reader-content>
+    </button>
+  </faceplate-tracker>
+      <shreddit-comment-share-button
+        permalink="/r/explainlikeimfive/comments/1860id3/comment/kb5bk63/" is-desktop-viewport
+        slot="comment-share"
+      ></shreddit-comment-share-button>
+      <shreddit-overflow-menu
+    slot="overflow"
+    source="comment"
+    action="click"
+    noun="overflow_menu"
+    comment-id="t1_kb5bk63"
+    classOverride="z-[unset] comment-overflow-menu"
+    >
+    
+    
+  <faceplate-tracker source="comment" action="click" noun="report">
+    <shreddit-report-comment-menu-button
+      author-id="t2_ro2fe"
+      author-name="adamjan2000"
+      comment-id="t1_kb5bk63"
+    ></shreddit-report-comment-menu-button>
+  </faceplate-tracker>
+
+    
+    
+    
+    
+    
+    
+    
+  </shreddit-overflow-menu>
+      
+      
+      
+      
+    </shreddit-comment-action-row>
+  
+      <div slot="children">
+            <div id="t1_kb5bk63-next-reply"></div>
+            
+    <faceplate-partial
+      class=""
+      loading="action"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/1860id3?sort=CONFIDENCE&amp;startingDepth=1"
+      method="post"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6ZDE6dDFfa2I1Yms2Mw==" />
+      
+    <div class="inline-block ml-px">
+      <button class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0" type="button">
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="1"></faceplate-number> more reply</span>
+  </button>
+    </div>
+
+    <div class="w-fit inline-block ml-px" slot="loading">
+      <button aria-hidden="true" class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 invisible h-0 !p-0" type="button">
+        
+    <span class="text-neutral-content-strong mr-xs flex items-center"
+        ><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="join-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.625 9.375H14v1.25h-3.375V14h-1.25v-3.375H6v-1.25h3.375V6h1.25v3.375ZM20 10A10 10 0 1 1 10 0a10.011 10.011 0 0 1 10 10Zm-1.25 0A8.75 8.75 0 1 0 10 18.75 8.76 8.76 0 0 0 18.75 10Z"></path>
+    </svg></span
+      >
+    <span class="text-secondary-weak font-normal"><faceplate-number number="1"></faceplate-number> more reply</span>
+  
+      </button>
+      <button
+        aria-label="Loading"
+        class="text-tone-2 text-12 no-underline hover:underline px-xs py-xs flex ml-[3px] xs:ml-0 !bg-transparent !border-0 pointer-events-none justify-center w-100"
+        type="button"
+      >
+        <icon-load class="animate-spin h-sm"></icon-load>
+      </button>
+    </div>
+  
+    </faceplate-partial>
+  
+          </div>
+    </shreddit-comment>
+  
+  
+    <faceplate-partial
+      class="top-level"
+      loading="lazy"
+      tabindex="0"
+      src="/svc/shreddit/more-comments/explainlikeimfive/t3_1860id3?render-mode=partial&amp;is_lit_ssr=false&amp;top-level=1&amp;comments-remaining=90"
+      method="POST"
+    >
+      <input type="hidden" name="cursor" value="Y29tbWVudHRyZWU6YzE6dDFfa2I0eTZxMix0MV9rYjUydDNsLHQxX2tiNXBydXgsdDFfa2I2aTJ5aix0MV9rYjVjZDE3LHQxX2tiNWozNnUsdDFfa2I2aG9oeix0MV9rYjVrN3Qy" />
+      <shreddit-loading></shreddit-loading>
+    </faceplate-partial>
+  
+    </shreddit-comment-tree>
+  </faceplate-tracker>
+    </faceplate-batch>
+  
+    <shreddit-overlay-display
+      class="theme-beta"
+    >
+      
+  <template slot="auth-flow">
+      <shreddit-signup-drawer
+      
+      subredditId="t5_2sokd"
+        subredditName="explainlikeimfive"
+        use-auth-flow
+      >
+        <slot slot="googleid-signin" name="googleid-signin"></slot>
+        <slot slot="appleid-signin" name="appleid-signin"></slot>
+        <slot slot="recaptcha" name="recaptcha"></slot>
+        <slot slot="login-username" name="login-username"></slot>
+        <slot slot="login-password" name="login-password"></slot>
+        <slot slot="register-username" name="register-username"></slot>
+        <slot slot="register-password" name="register-password"></slot>
+      </shreddit-signup-drawer>
+    </template>
+     
+    <div slot="googleid-signin" class="googleid-signin" style="height: 40px;"></div>
+    <div slot="appleid-signin" class="appleid-signin" data-type="sign in"></div>
+  
+      
+    <div
+      slot="recaptcha"
+      class="recaptcha"
+      data-site-key="6LeTnxkTAAAAAN9QEuDZRpn90WwKk_R1TRW_g-JC"
+    ></div>
+   
+    <span class="w-100 h-100" slot="register-username" id="register-username-container"></span>
+    <span class="w-100 h-100" slot="register-password" id="register-password-container"></span>
+   
+    <span class="w-100 h-100" slot="login-username" id="login-username-container"> </span>
+    <span class="w-100 h-100" slot="login-password" id="login-password-container"> </span>
+  
+    </shreddit-overlay-display>
+    
+    <form
+      tabindex="-1"
+      class="h-px w-px overflow-hidden fixed -left-100 -bottom-100 whitespace-nowrap opacity-0 pointer-events-none"
+      aria-hidden="true"
+      id="login-overlay"
+      method="post"
+      action="/svc/shreddit/account/login"
+    >
+      <input id="light-username-field" name="username-field" type="text" autocomplete="username" />
+      <input
+        id="light-password-field"
+        name="password-field"
+        type="password"
+        autocomplete="current-password"
+      />
+    </form>
+  
+  

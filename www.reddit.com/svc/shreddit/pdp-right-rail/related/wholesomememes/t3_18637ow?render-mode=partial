@@ -1,0 +1,1376 @@
+
+     <h2
+    class="flex items-center font-semibold leading-5 mt-[20px] mb-sm px-md text-18 xs:hidden"
+  >
+    More posts you may like
+  </h2>
+    <pdp-right-rail class="pdp px-md xs:px-0 block">
+      <div slot="tabs" class="px-0 py-xs gap-[2px]">
+    <faceplate-tabgroup
+      id="pdp-right-rail-tabs"
+      for="pdp-right-rail-topics"
+      pageindex="1"
+      class="self-start"
+    >
+      <button rpl
+      class="flex-shrink-0
+button-small px-[var(--rem10)]
+button-plain
+
+
+
+button inline-flex items-center justify-center "
+      slot="page-1"
+      tabindex="-1"
+      type="button">
+      <span
+      class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs"><span
+    data-slug="pdp_right_rail_related"
+    event-data="%7B%22topic%22%3A%7B%22name%22%3A%22Related%22%2C%22slug%22%3A%22pdp_right_rail_related%22%7D%7D"
+  >
+    <faceplate-tracker source="right_rail" action="view" noun="panel_tab">
+      <faceplate-tracker source="right_rail" action="click" noun="panel_tab"
+        ><span>Related</span></faceplate-tracker
+      ></faceplate-tracker
+    ></span
+  ></span>
+    </span>
+    
+    
+    </button><a rpl
+      class="hover:no-underline !block
+button-small px-[var(--rem10)]
+button-plain
+
+
+
+button inline-flex items-center justify-center "
+      href="https://www.reddit.com/t/memes/"
+      slot="page-2"
+      tabindex="-1"
+      type="button"
+      ><span
+      class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs"><span
+    data-slug="memes"
+    event-data="%7B%22topic%22%3A%7B%22name%22%3A%22Meme%22%2C%22slug%22%3A%22memes%22%7D%7D"
+  >
+    <faceplate-tracker source="right_rail" action="view" noun="panel_tab">
+      <faceplate-tracker source="right_rail" action="click" noun="panel_tab"
+        ><span>Meme</span></faceplate-tracker
+      ></faceplate-tracker
+    ></span
+  ></span>
+    </span>
+    
+    </a
+    ><a rpl
+      class="hover:no-underline !block
+button-small px-[var(--rem10)]
+button-plain
+
+
+
+button inline-flex items-center justify-center "
+      href="https://www.reddit.com/t/internet_culture_and_memes/"
+      slot="page-3"
+      tabindex="-1"
+      type="button"
+      ><span
+      class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs"><span
+    data-slug="internet_culture_and_memes"
+    event-data="%7B%22topic%22%3A%7B%22name%22%3A%22Internet%20Culture%20and%20Memes%22%2C%22slug%22%3A%22internet_culture_and_memes%22%7D%7D"
+  >
+    <faceplate-tracker source="right_rail" action="view" noun="panel_tab">
+      <faceplate-tracker source="right_rail" action="click" noun="panel_tab"
+        ><span>Internet Culture and Memes</span></faceplate-tracker
+      ></faceplate-tracker
+    ></span
+  ></span>
+    </span>
+    
+    </a
+    >  <button rpl
+      class="
+button-small px-[var(--rem6)]
+button-plain
+
+
+icon
+button inline-flex items-center justify-center "
+      slot="forward-button"
+      tabindex="-1"
+      type="button">
+      <span
+      class="flex items-center justify-center">
+      <span class="flex"><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="caret-right-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m7.942 15.442-.884-.884L11.616 10 7.058 5.442l.884-.884 5 5a.624.624 0 0 1 0 .884l-5 5Z"></path>
+    </svg></span>
+      
+    </span>
+    
+    <faceplate-screen-reader-content
+          >forward</faceplate-screen-reader-content
+        >
+    </button>
+  <button rpl
+      class="
+button-small px-[var(--rem6)]
+button-plain
+
+
+icon
+button inline-flex items-center justify-center "
+      slot="back-button"
+      tabindex="-1"
+      type="button">
+      <span
+      class="flex items-center justify-center">
+      <span class="flex"><svg rpl
+      fill="currentColor"
+      height="16"
+      icon-name="caret-left-outline"
+      viewBox="0 0 20 20"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m12.058 15.442-5-5a.624.624 0 0 1 0-.884l5-5 .884.884L8.384 10l4.558 4.558-.884.884Z"></path>
+    </svg></span>
+      
+    </span>
+    
+    <faceplate-screen-reader-content
+          >back</faceplate-screen-reader-content
+        >
+    </button>
+    </faceplate-tabgroup>
+  </div>
+      <faceplate-tabpanel
+        slot="tab-panel"
+        id="pdp-right-rail-topics"
+        pages="3"
+        pageindex="1"
+      >
+        
+    <div slot="page-1" data-slug="pdp_right_rail_related">
+      
+            <faceplate-tracker source="global" action="view" noun="discovery_unit">
+               <ul class="list-none p-0 m-0">
+    
+          <li>
+            
+            
+
+            <reddit-pdp-right-rail-post
+              class="nd:visible"
+              event-data="%7B%22correlation_id%22%3A%222c0d95f5-fabf-4c94-a0b4-484d8b3f8c07%22%2C%22experiment%22%3A%7B%22name%22%3A%22platformex_listing_below_popular_posts%22%7D%2C%22ml_model%22%3A%7B%22name%22%3A%22search_nlp%22%2C%22features%22%3A%22%7B%5C%22host_post_id%5C%22%3A%5C%22t3_18637ow%5C%22%7D%22%7D%2C%22action_info%22%3A%7B%22position%22%3A1%7D%2C%22post%22%3A%7B%22archived%22%3Afalse%2C%22created_timestamp%22%3A1699117874529%2C%22id%22%3A%22t3_17nq8pt%22%2C%22nsfw%22%3Afalse%2C%22number_comments%22%3A16%2C%22promoted%22%3Afalse%2C%22score%22%3A1045%2C%22subreddit_id%22%3A%22t5_3gcwj%22%2C%22subreddit_name%22%3A%22wholesomememes%22%2C%22title%22%3A%22Me%20after%20years%20of%20therapy%20reaching%20the%20emotional%20goal%20of%20being%20able%20to%20cry.%20I%E2%80%99m%20in%20touch%20with%20myself!%22%2C%22type%22%3A%22image%22%7D%2C%22subreddit%22%3A%7B%22id%22%3A%22t5_3gcwj%22%2C%22name%22%3A%22wholesomememes%22%7D%7D"
+              post-id="t3_18637ow"
+            >
+              
+    <div>
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <div class="flex text-neutral-content text-12">
+      <div class="flex flex-col grow">
+        
+    <div class="items-center">
+      
+    <shreddit-async-loader bundleName="faceplate_hovercard">
+      <faceplate-hovercard
+        class="nd:visible"
+        position="bottom-start"
+        data-id="community-hover-card"
+        aria-label="r/wholesomememes"
+      >
+        <faceplate-tracker
+              source="post_detail"
+              action="click"
+              noun="post"
+              class="visible"
+            >
+              <a rpl
+      class="flex items-center min-w-0 text-neutral-content-weak hover:text-neutral-content-weak a
+  
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/wholesomememes"
+      >
+      <div class="flex flex-shrink-0 w-lg h-lg">
+        <faceplate-img
+    src="https://b.thumbs.redditmedia.com/voAwqXNBDO4JwIODmO4HXXkUJbnVo_mL_bENHeagDNo.png"
+    alt="r/wholesomememes icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background text-24 leading-5 h-full w-full"
+    width="24"
+    height="24"
+    
+    loading="lazy"
+    
+    
+    style="color: #FFBE4E; background-color: #FFBE4E"
+  ></faceplate-img>
+      </div>
+      <div class="ml-xs truncate">r/wholesomememes</div>
+    </a
+    >
+            </faceplate-tracker>
+        <div slot="content" class="max-w-[360px] w-[90vw] overflow-hidden p-0 -m-[0.5rem]">
+          <div class="flex flex-col">
+            <div class="h-[80px] w-auto overflow-hidden relative rounded-t-[16px]">
+                  <faceplate-img
+    src="https://styles.redditmedia.com/t5_3gcwj/styles/bannerBackgroundImage_xb79tkanji141.jpg?format=pjpg&amp;s=f3b989950120f6aef4fd1a76cebadfdd526035fc"
+    alt="A banner for the subreddit"
+    class="w-auto h-full object-cover absolute"
+    
+    
+    
+  ></faceplate-img>
+                </div>
+            <div class="px-sm pt-sm flex items-center">
+              <span class="w-[48px] h-[48px] text-24 shrink-0"
+                ><faceplate-img
+    src="https://b.thumbs.redditmedia.com/voAwqXNBDO4JwIODmO4HXXkUJbnVo_mL_bENHeagDNo.png"
+    alt="r/wholesomememes icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background "
+    width="48"
+    height="48"
+    
+    loading="lazy"
+    
+    
+    style="color: #FFBE4E; background-color: #FFBE4E"
+  ></faceplate-img></span
+              >
+              <span class="flex flex-col ml-xs grow-0 w-100">
+                <faceplate-tracker source="subreddit_hovercard" action="click" noun="title">
+                  <a rpl
+      class="text-18 font-bold text-neutral-content-strong leading-6 a
+  text-14
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/wholesomememes/"
+      >r/wholesomememes</a
+    >
+                </faceplate-tracker>
+              </span>
+              <faceplate-tracker
+                    class="ml-auto"
+                    source="subreddit_hovercard"
+                    action="click"
+                    noun="join_signup_cta"
+                  >
+                    <shreddit-join-button
+                      subreddit-id="t5_3gcwj"
+                      name="wholesomememes"
+                      buttonsize="x-small"
+                      button-type="secondary"
+                    ></shreddit-join-button>
+                  </faceplate-tracker>
+            </div>
+            <p class="px-md pt-md m-0 whitespace-normal text-14 leading-5 font-normal">
+              Welcome to the wholesome side of the internet! This community is for those searching for a way to capture virtue on the internet.
+            </p>
+            <hr class="mx-md pt-md border-neutral-border-weak" />
+            <div class="px-md py-md flex items-center">
+              <span class="flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="14858225" pretty></faceplate-number>
+                </span>
+                <span class="text-12 leading-4 text-neutral-content-weak"
+                  >Members</span
+                >
+              </span>
+              <span data-testid="community-hover-card:active-count" class="ml-xl flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="11686" pretty></faceplate-number>
+                </span>
+                <span class="flex items-center">
+                  <span class="bg-kiwigreen-400 rounded-full w-xs h-xs"></span>
+                  <span class="text-12 leading-4 text-neutral-content-weak ml-2xs"
+                    >Online</span
+                  >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </faceplate-hovercard>
+    </shreddit-async-loader>
+  
+    </div>
+  
+        
+    <div class="flex">
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <a rpl
+      class="flex flex-wrap group
+                  text-neutral-content-weak
+                  hover:text-neutral-content-weak
+                  dark:text-neutral-content-strong
+                  dark:hover:text-neutral-content-strong
+                  xs:dark:text-neutral-content-weak
+                  xs:dark:hover:text-neutral-content-weak
+                 a
+  
+  
+  no-visited
+  no-underline hover:no-underline
+  "
+      href="/r/wholesomememes/comments/17nq8pt/me_after_years_of_therapy_reaching_the_emotional/"
+      > <div class="flex grow min-w-0 mb-2xs mt-2xs">
+        <div class="flex flex-col gap-2xs grow mt-2xs">
+          
+          <h3
+            class="text-14 line-clamp-2 m-0 font-semibold overflow-hidden group-hover:underline"
+            title="Me after years of therapy reaching the emotional goal of being able to cry. I’m in touch with myself!"
+            aria-label="Right rail post - Me after years of therapy reaching the emotional goal of be..."
+          >
+            Me after years of therapy reaching the emotional goal of being able to cry. I’m in touch with myself!
+          </h3>
+        </div>
+      </div></a
+    >
+  
+            </faceplate-tracker>
+          
+    </div>
+  
+      </div>
+      <div class="flex shink-0 ml-sm">
+        <div
+    
+    class="relative rounded-[8px] overflow-hidden box-border border border-solid border-neutral-border-weak xs:h-[84px] xs:w-[84px]"
+  >
+    <a class="block w-100 h-100"  href="/r/wholesomememes/comments/17nq8pt/me_after_years_of_therapy_reaching_the_emotional/" target="_self"
+  aria-label="r/wholesomememes - Me after years of therapy reaching the emotional goal of being able to cry. I’m in touch with myself!"><faceplate-img
+    src="https://b.thumbs.redditmedia.com/zehhwDAmYZOfIHcufobhMjil6c3RjxcQo3-Hxwvnl4A.jpg"
+    alt="r/wholesomememes - Me after years of therapy reaching the emotional goal of being able to cry. I’m in touch with myself!"
+    class="h-full w-full object-cover"
+    
+    
+    
+  ></faceplate-img></a><div class="absolute inset-0 rounded-[8px] thumbnail-shadow pointer-events-none"> <div
+    class="absolute bottom-0 bg-media-background text-media-onbackground m-[4px] rounded-full h-[20px] w-[20px] flex items-center justify-center"
+  >
+    <svg rpl
+      class="h-[12px] w-[12px]"
+      fill="currentColor"
+      height="20"
+      icon-name="image-post-fill"
+      viewBox="0 0 20 20"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m7.935 12.305 6.7 6.7h-12A1.626 1.626 0 0 1 1 17.375v-.946l.022.022 4.146-4.146a1.96 1.96 0 0 1 2.767 0ZM19 2.625v14.75a1.623 1.623 0 0 1-1.565 1.619l.008-.009-8.094-8.094a3.961 3.961 0 0 0-5.6 0L1 13.645V2.625A1.627 1.627 0 0 1 2.625 1h14.75A1.627 1.627 0 0 1 19 2.625ZM15.5 7a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+    </svg>
+  </div></div>
+  </div>
+      </div>
+    </div>
+  
+            </faceplate-tracker>
+          
+      
+    <div class="min-w-full mt-2xs truncate">
+      <div class="text-neutral-content-weak text-12">
+        
+      <faceplate-number number="1045" pretty></faceplate-number>
+      upvotes
+    
+        <span class="mr-2xs ml-2xs">·</span>
+        
+      <faceplate-number number="16" pretty></faceplate-number>
+      <span >comments</span>
+    
+      </div>
+    </div>
+  
+    </div>
+  
+              <hr class="w-100 my-sm border-neutral-border-weak" />
+            </reddit-pdp-right-rail-post>
+          </li>
+        
+          <li>
+            
+            
+
+            <reddit-pdp-right-rail-post
+              class="nd:visible"
+              event-data="%7B%22correlation_id%22%3A%222c0d95f5-fabf-4c94-a0b4-484d8b3f8c07%22%2C%22experiment%22%3A%7B%22name%22%3A%22platformex_listing_below_popular_posts%22%7D%2C%22ml_model%22%3A%7B%22name%22%3A%22search_nlp%22%2C%22features%22%3A%22%7B%5C%22host_post_id%5C%22%3A%5C%22t3_18637ow%5C%22%7D%22%7D%2C%22action_info%22%3A%7B%22position%22%3A2%7D%2C%22post%22%3A%7B%22archived%22%3Atrue%2C%22created_timestamp%22%3A1327074024435%2C%22id%22%3A%22t3_oox4d%22%2C%22nsfw%22%3Afalse%2C%22number_comments%22%3A29%2C%22promoted%22%3Afalse%2C%22score%22%3A127%2C%22subreddit_id%22%3A%22t5_2qh33%22%2C%22subreddit_name%22%3A%22funny%22%2C%22title%22%3A%22Who&#39;s%20voice%20is%20it%20now%3F%22%2C%22type%22%3A%22image%22%7D%2C%22subreddit%22%3A%7B%22id%22%3A%22t5_2qh33%22%2C%22name%22%3A%22funny%22%7D%7D"
+              post-id="t3_18637ow"
+            >
+              
+    <div>
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <div class="flex text-neutral-content text-12">
+      <div class="flex flex-col grow">
+        
+    <div class="items-center">
+      
+    <shreddit-async-loader bundleName="faceplate_hovercard">
+      <faceplate-hovercard
+        class="nd:visible"
+        position="bottom-start"
+        data-id="community-hover-card"
+        aria-label="r/funny"
+      >
+        <faceplate-tracker
+              source="post_detail"
+              action="click"
+              noun="post"
+              class="visible"
+            >
+              <a rpl
+      class="flex items-center min-w-0 text-neutral-content-weak hover:text-neutral-content-weak a
+  
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/funny"
+      >
+      <div class="flex flex-shrink-0 w-lg h-lg">
+        <faceplate-img
+    src="https://a.thumbs.redditmedia.com/kIpBoUR8zJLMQlF8azhN-kSBsjVUidHjvZNLuHDONm8.png"
+    alt="r/funny icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background text-24 leading-5 h-full w-full"
+    width="24"
+    height="24"
+    
+    loading="lazy"
+    
+    
+    style="color: #0DD3BB; background-color: #0DD3BB"
+  ></faceplate-img>
+      </div>
+      <div class="ml-xs truncate">r/funny</div>
+    </a
+    >
+            </faceplate-tracker>
+        <div slot="content" class="max-w-[360px] w-[90vw] overflow-hidden p-0 -m-[0.5rem]">
+          <div class="flex flex-col">
+            
+            <div class="px-sm pt-sm flex items-center">
+              <span class="w-[48px] h-[48px] text-24 shrink-0"
+                ><faceplate-img
+    src="https://a.thumbs.redditmedia.com/kIpBoUR8zJLMQlF8azhN-kSBsjVUidHjvZNLuHDONm8.png"
+    alt="r/funny icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background "
+    width="48"
+    height="48"
+    
+    loading="lazy"
+    
+    
+    style="color: #0DD3BB; background-color: #0DD3BB"
+  ></faceplate-img></span
+              >
+              <span class="flex flex-col ml-xs grow-0 w-100">
+                <faceplate-tracker source="subreddit_hovercard" action="click" noun="title">
+                  <a rpl
+      class="text-18 font-bold text-neutral-content-strong leading-6 a
+  text-14
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/funny/"
+      >r/funny</a
+    >
+                </faceplate-tracker>
+              </span>
+              <faceplate-tracker
+                    class="ml-auto"
+                    source="subreddit_hovercard"
+                    action="click"
+                    noun="join_signup_cta"
+                  >
+                    <shreddit-join-button
+                      subreddit-id="t5_2qh33"
+                      name="funny"
+                      buttonsize="x-small"
+                      button-type="secondary"
+                    ></shreddit-join-button>
+                  </faceplate-tracker>
+            </div>
+            <p class="px-md pt-md m-0 whitespace-normal text-14 leading-5 font-normal">
+              Reddit&#39;s largest humor depository
+            </p>
+            <hr class="mx-md pt-md border-neutral-border-weak" />
+            <div class="px-md py-md flex items-center">
+              <span class="flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="54670084" pretty></faceplate-number>
+                </span>
+                <span class="text-12 leading-4 text-neutral-content-weak"
+                  >Members</span
+                >
+              </span>
+              <span data-testid="community-hover-card:active-count" class="ml-xl flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="30627" pretty></faceplate-number>
+                </span>
+                <span class="flex items-center">
+                  <span class="bg-kiwigreen-400 rounded-full w-xs h-xs"></span>
+                  <span class="text-12 leading-4 text-neutral-content-weak ml-2xs"
+                    >Online</span
+                  >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </faceplate-hovercard>
+    </shreddit-async-loader>
+  
+    </div>
+  
+        
+    <div class="flex">
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <a rpl
+      class="flex flex-wrap group
+                  text-neutral-content-weak
+                  hover:text-neutral-content-weak
+                  dark:text-neutral-content-strong
+                  dark:hover:text-neutral-content-strong
+                  xs:dark:text-neutral-content-weak
+                  xs:dark:hover:text-neutral-content-weak
+                 a
+  
+  
+  no-visited
+  no-underline hover:no-underline
+  "
+      href="/r/funny/comments/oox4d/whos_voice_is_it_now/"
+      > <div class="flex grow min-w-0 mb-2xs mt-2xs">
+        <div class="flex flex-col gap-2xs grow mt-2xs">
+          
+          <h3
+            class="text-14 line-clamp-2 m-0 font-semibold overflow-hidden group-hover:underline"
+            title="Who&#39;s voice is it now?"
+            aria-label="Right rail post - Who&#39;s voice is it now?"
+          >
+            Who&#39;s voice is it now?
+          </h3>
+        </div>
+      </div></a
+    >
+  
+            </faceplate-tracker>
+          
+    </div>
+  
+      </div>
+      <div class="flex shink-0 ml-sm">
+        <div
+    
+    class="relative rounded-[8px] overflow-hidden box-border border border-solid border-neutral-border-weak xs:h-[84px] xs:w-[84px]"
+  >
+    <a class="block w-100 h-100"  href="/r/funny/comments/oox4d/whos_voice_is_it_now/" target="_self"
+  aria-label="r/funny - Who&#39;s voice is it now?"><faceplate-img
+    src="https://b.thumbs.redditmedia.com/nDDmzk2ey6V1iI9tG3rvUXZGvfzdFX3f-3F_OrzZTew.jpg"
+    alt="r/funny - Who&#39;s voice is it now?"
+    class="h-full w-full object-cover"
+    
+    
+    
+  ></faceplate-img></a><div class="absolute inset-0 rounded-[8px] thumbnail-shadow pointer-events-none"> <div
+    class="absolute bottom-0 bg-media-background text-media-onbackground m-[4px] rounded-full h-[20px] w-[20px] flex items-center justify-center"
+  >
+    <svg rpl
+      class="h-[12px] w-[12px]"
+      fill="currentColor"
+      height="20"
+      icon-name="image-post-fill"
+      viewBox="0 0 20 20"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m7.935 12.305 6.7 6.7h-12A1.626 1.626 0 0 1 1 17.375v-.946l.022.022 4.146-4.146a1.96 1.96 0 0 1 2.767 0ZM19 2.625v14.75a1.623 1.623 0 0 1-1.565 1.619l.008-.009-8.094-8.094a3.961 3.961 0 0 0-5.6 0L1 13.645V2.625A1.627 1.627 0 0 1 2.625 1h14.75A1.627 1.627 0 0 1 19 2.625ZM15.5 7a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+    </svg>
+  </div></div>
+  </div>
+      </div>
+    </div>
+  
+            </faceplate-tracker>
+          
+      
+    <div class="min-w-full mt-2xs truncate">
+      <div class="text-neutral-content-weak text-12">
+        
+      <faceplate-number number="127" pretty></faceplate-number>
+      upvotes
+    
+        <span class="mr-2xs ml-2xs">·</span>
+        
+      <faceplate-number number="29" pretty></faceplate-number>
+      <span >comments</span>
+    
+      </div>
+    </div>
+  
+    </div>
+  
+              <hr class="w-100 my-sm border-neutral-border-weak" />
+            </reddit-pdp-right-rail-post>
+          </li>
+        
+          <li>
+            
+            
+
+            <reddit-pdp-right-rail-post
+              class="nd:visible"
+              event-data="%7B%22correlation_id%22%3A%222c0d95f5-fabf-4c94-a0b4-484d8b3f8c07%22%2C%22experiment%22%3A%7B%22name%22%3A%22platformex_listing_below_popular_posts%22%7D%2C%22ml_model%22%3A%7B%22name%22%3A%22search_nlp%22%2C%22features%22%3A%22%7B%5C%22host_post_id%5C%22%3A%5C%22t3_18637ow%5C%22%7D%22%7D%2C%22action_info%22%3A%7B%22position%22%3A3%7D%2C%22post%22%3A%7B%22archived%22%3Atrue%2C%22created_timestamp%22%3A1454539995927%2C%22id%22%3A%22t3_442dx9%22%2C%22nsfw%22%3Afalse%2C%22number_comments%22%3A25%2C%22promoted%22%3Afalse%2C%22score%22%3A54%2C%22subreddit_id%22%3A%22t5_2t4it%22%2C%22subreddit_name%22%3A%22letstalkmusic%22%2C%22title%22%3A%22Let&#39;s%20Talk%3A%20Django%20Reinhardt%22%2C%22type%22%3A%22multi_media%22%7D%2C%22subreddit%22%3A%7B%22id%22%3A%22t5_2t4it%22%2C%22name%22%3A%22letstalkmusic%22%7D%7D"
+              post-id="t3_18637ow"
+            >
+              
+    <div>
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <div class="flex text-neutral-content text-12">
+      <div class="flex flex-col grow">
+        
+    <div class="items-center">
+      
+    <shreddit-async-loader bundleName="faceplate_hovercard">
+      <faceplate-hovercard
+        class="nd:visible"
+        position="bottom-start"
+        data-id="community-hover-card"
+        aria-label="r/LetsTalkMusic"
+      >
+        <faceplate-tracker
+              source="post_detail"
+              action="click"
+              noun="post"
+              class="visible"
+            >
+              <a rpl
+      class="flex items-center min-w-0 text-neutral-content-weak hover:text-neutral-content-weak a
+  
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/LetsTalkMusic"
+      >
+      <div class="flex flex-shrink-0 w-lg h-lg">
+        <faceplate-img
+    src="https://styles.redditmedia.com/t5_2t4it/styles/communityIcon_zz4vwyl7fmv11.png"
+    alt="r/LetsTalkMusic icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background text-24 leading-5 h-full w-full"
+    width="24"
+    height="24"
+    
+    loading="lazy"
+    
+    
+    style="color: #DDDDDD; background-color: #DDDDDD"
+  ></faceplate-img>
+      </div>
+      <div class="ml-xs truncate">r/LetsTalkMusic</div>
+    </a
+    >
+            </faceplate-tracker>
+        <div slot="content" class="max-w-[360px] w-[90vw] overflow-hidden p-0 -m-[0.5rem]">
+          <div class="flex flex-col">
+            <div class="h-[80px] w-auto overflow-hidden relative rounded-t-[16px]">
+                  <faceplate-img
+    src="https://styles.redditmedia.com/t5_2t4it/styles/bannerBackgroundImage_kcu7k84luwv21.png"
+    alt="A banner for the subreddit"
+    class="w-auto h-full object-cover absolute"
+    
+    
+    
+  ></faceplate-img>
+                </div>
+            <div class="px-sm pt-sm flex items-center">
+              <span class="w-[48px] h-[48px] text-24 shrink-0"
+                ><faceplate-img
+    src="https://styles.redditmedia.com/t5_2t4it/styles/communityIcon_zz4vwyl7fmv11.png"
+    alt="r/LetsTalkMusic icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background "
+    width="48"
+    height="48"
+    
+    loading="lazy"
+    
+    
+    style="color: #DDDDDD; background-color: #DDDDDD"
+  ></faceplate-img></span
+              >
+              <span class="flex flex-col ml-xs grow-0 w-100">
+                <faceplate-tracker source="subreddit_hovercard" action="click" noun="title">
+                  <a rpl
+      class="text-18 font-bold text-neutral-content-strong leading-6 a
+  text-14
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/LetsTalkMusic/"
+      >r/LetsTalkMusic</a
+    >
+                </faceplate-tracker>
+              </span>
+              <faceplate-tracker
+                    class="ml-auto"
+                    source="subreddit_hovercard"
+                    action="click"
+                    noun="join_signup_cta"
+                  >
+                    <shreddit-join-button
+                      subreddit-id="t5_2t4it"
+                      name="LetsTalkMusic"
+                      buttonsize="x-small"
+                      button-type="secondary"
+                    ></shreddit-join-button>
+                  </faceplate-tracker>
+            </div>
+            <p class="px-md pt-md m-0 whitespace-normal text-14 leading-5 font-normal">
+              A community for people who are passionate about music. Stimulating, in-depth music discussions aren&#39;t rare here.
+            </p>
+            <hr class="mx-md pt-md border-neutral-border-weak" />
+            <div class="px-md py-md flex items-center">
+              <span class="flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="434135" pretty></faceplate-number>
+                </span>
+                <span class="text-12 leading-4 text-neutral-content-weak"
+                  >Members</span
+                >
+              </span>
+              <span data-testid="community-hover-card:active-count" class="ml-xl flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="694" pretty></faceplate-number>
+                </span>
+                <span class="flex items-center">
+                  <span class="bg-kiwigreen-400 rounded-full w-xs h-xs"></span>
+                  <span class="text-12 leading-4 text-neutral-content-weak ml-2xs"
+                    >Online</span
+                  >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </faceplate-hovercard>
+    </shreddit-async-loader>
+  
+    </div>
+  
+        
+    <div class="flex">
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <a rpl
+      class="flex flex-wrap group
+                  text-neutral-content-weak
+                  hover:text-neutral-content-weak
+                  dark:text-neutral-content-strong
+                  dark:hover:text-neutral-content-strong
+                  xs:dark:text-neutral-content-weak
+                  xs:dark:hover:text-neutral-content-weak
+                 a
+  
+  
+  no-visited
+  no-underline hover:no-underline
+  "
+      href="/r/LetsTalkMusic/comments/442dx9/lets_talk_django_reinhardt/"
+      > <div class="flex grow min-w-0 mb-2xs mt-2xs">
+        <div class="flex flex-col gap-2xs grow mt-2xs">
+          
+          <h3
+            class="text-14 line-clamp-2 m-0 font-semibold overflow-hidden group-hover:underline"
+            title="Let&#39;s Talk: Django Reinhardt"
+            aria-label="Right rail post - Let&#39;s Talk: Django Reinhardt"
+          >
+            Let&#39;s Talk: Django Reinhardt
+          </h3>
+        </div>
+      </div></a
+    >
+  
+            </faceplate-tracker>
+          
+    </div>
+  
+      </div>
+      <div class="flex shink-0 ml-sm">
+        
+      </div>
+    </div>
+  
+            </faceplate-tracker>
+          
+      
+    <div class="min-w-full mt-2xs truncate">
+      <div class="text-neutral-content-weak text-12">
+        
+      <faceplate-number number="54" pretty></faceplate-number>
+      upvotes
+    
+        <span class="mr-2xs ml-2xs">·</span>
+        
+      <faceplate-number number="25" pretty></faceplate-number>
+      <span >comments</span>
+    
+      </div>
+    </div>
+  
+    </div>
+  
+              <hr class="w-100 my-sm border-neutral-border-weak" />
+            </reddit-pdp-right-rail-post>
+          </li>
+        
+          <li>
+            
+            
+
+            <reddit-pdp-right-rail-post
+              class="nd:visible"
+              event-data="%7B%22correlation_id%22%3A%222c0d95f5-fabf-4c94-a0b4-484d8b3f8c07%22%2C%22experiment%22%3A%7B%22name%22%3A%22platformex_listing_below_popular_posts%22%7D%2C%22ml_model%22%3A%7B%22name%22%3A%22search_nlp%22%2C%22features%22%3A%22%7B%5C%22host_post_id%5C%22%3A%5C%22t3_18637ow%5C%22%7D%22%7D%2C%22action_info%22%3A%7B%22position%22%3A4%7D%2C%22post%22%3A%7B%22archived%22%3Atrue%2C%22created_timestamp%22%3A1467870935637%2C%22id%22%3A%22t3_4rn1pn%22%2C%22nsfw%22%3Afalse%2C%22number_comments%22%3A106%2C%22promoted%22%3Afalse%2C%22score%22%3A834%2C%22subreddit_id%22%3A%22t5_2qh22%22%2C%22subreddit_name%22%3A%22anime%22%2C%22title%22%3A%22Ever%20wonder%20what%20makes%20The%20Disappearance%20Of%20Haruhi%20Suzumiya%20an%20absolute%20masterpiece%3F%20Well%2C%20I%20spent%20three%20months%20worth%20of%20weekends%20and%20recorded%20over%20four%20hours%20analyzing%20every%20single%20shot%20in%20the%20entire%20film.%20Just%20for%20you.%20Merry%20Tanabata.%22%2C%22type%22%3A%22link%22%7D%2C%22subreddit%22%3A%7B%22id%22%3A%22t5_2qh22%22%2C%22name%22%3A%22anime%22%7D%7D"
+              post-id="t3_18637ow"
+            >
+              
+    <div>
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <div class="flex text-neutral-content text-12">
+      <div class="flex flex-col grow">
+        
+    <div class="items-center">
+      
+    <shreddit-async-loader bundleName="faceplate_hovercard">
+      <faceplate-hovercard
+        class="nd:visible"
+        position="bottom-start"
+        data-id="community-hover-card"
+        aria-label="r/anime"
+      >
+        <faceplate-tracker
+              source="post_detail"
+              action="click"
+              noun="post"
+              class="visible"
+            >
+              <a rpl
+      class="flex items-center min-w-0 text-neutral-content-weak hover:text-neutral-content-weak a
+  
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/anime"
+      >
+      <div class="flex flex-shrink-0 w-lg h-lg">
+        <faceplate-img
+    src="https://styles.redditmedia.com/t5_2qh22/styles/communityIcon_5z6p47idri9a1.png"
+    alt="r/anime icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background text-24 leading-5 h-full w-full"
+    width="24"
+    height="24"
+    
+    loading="lazy"
+    
+    
+    style="color: #5687E3; background-color: #5687E3"
+  ></faceplate-img>
+      </div>
+      <div class="ml-xs truncate">r/anime</div>
+    </a
+    >
+            </faceplate-tracker>
+        <div slot="content" class="max-w-[360px] w-[90vw] overflow-hidden p-0 -m-[0.5rem]">
+          <div class="flex flex-col">
+            
+            <div class="px-sm pt-sm flex items-center">
+              <span class="w-[48px] h-[48px] text-24 shrink-0"
+                ><faceplate-img
+    src="https://styles.redditmedia.com/t5_2qh22/styles/communityIcon_5z6p47idri9a1.png"
+    alt="r/anime icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background "
+    width="48"
+    height="48"
+    
+    loading="lazy"
+    
+    
+    style="color: #5687E3; background-color: #5687E3"
+  ></faceplate-img></span
+              >
+              <span class="flex flex-col ml-xs grow-0 w-100">
+                <faceplate-tracker source="subreddit_hovercard" action="click" noun="title">
+                  <a rpl
+      class="text-18 font-bold text-neutral-content-strong leading-6 a
+  text-14
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/anime/"
+      >r/anime</a
+    >
+                </faceplate-tracker>
+              </span>
+              <faceplate-tracker
+                    class="ml-auto"
+                    source="subreddit_hovercard"
+                    action="click"
+                    noun="join_signup_cta"
+                  >
+                    <shreddit-join-button
+                      subreddit-id="t5_2qh22"
+                      name="anime"
+                      buttonsize="x-small"
+                      button-type="secondary"
+                    ></shreddit-join-button>
+                  </faceplate-tracker>
+            </div>
+            <p class="px-md pt-md m-0 whitespace-normal text-14 leading-5 font-normal">
+              Reddit&#39;s premier anime community.
+            </p>
+            <hr class="mx-md pt-md border-neutral-border-weak" />
+            <div class="px-md py-md flex items-center">
+              <span class="flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="8574025" pretty></faceplate-number>
+                </span>
+                <span class="text-12 leading-4 text-neutral-content-weak"
+                  >Members</span
+                >
+              </span>
+              <span data-testid="community-hover-card:active-count" class="ml-xl flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="7814" pretty></faceplate-number>
+                </span>
+                <span class="flex items-center">
+                  <span class="bg-kiwigreen-400 rounded-full w-xs h-xs"></span>
+                  <span class="text-12 leading-4 text-neutral-content-weak ml-2xs"
+                    >Online</span
+                  >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </faceplate-hovercard>
+    </shreddit-async-loader>
+  
+    </div>
+  
+        
+    <div class="flex">
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <a rpl
+      class="flex flex-wrap group
+                  text-neutral-content-weak
+                  hover:text-neutral-content-weak
+                  dark:text-neutral-content-strong
+                  dark:hover:text-neutral-content-strong
+                  xs:dark:text-neutral-content-weak
+                  xs:dark:hover:text-neutral-content-weak
+                 a
+  
+  
+  no-visited
+  no-underline hover:no-underline
+  "
+      href="/r/anime/comments/4rn1pn/ever_wonder_what_makes_the_disappearance_of/"
+      > <div class="flex grow min-w-0 mb-2xs mt-2xs">
+        <div class="flex flex-col gap-2xs grow mt-2xs">
+          
+          <h3
+            class="text-14 line-clamp-2 m-0 font-semibold overflow-hidden group-hover:underline"
+            title="Ever wonder what makes The Disappearance Of Haruhi Suzumiya an absolute masterpiece? Well, I spent three months worth of weekends and recorded over four hours analyzing every single shot in the entire film. Just for you. Merry Tanabata."
+            aria-label="Right rail post - Ever wonder what makes The Disappearance Of Haruhi Suzumiya..."
+          >
+            Ever wonder what makes The Disappearance Of Haruhi Suzumiya an absolute masterpiece? Well, I spent three months worth of weekends and recorded over four hours analyzing every single shot in the entire film. Just for you. Merry Tanabata.
+          </h3>
+        </div>
+      </div></a
+    >
+  
+            </faceplate-tracker>
+          
+    </div>
+  
+      </div>
+      <div class="flex shink-0 ml-sm">
+        <div
+    
+    class="relative rounded-[8px] overflow-hidden box-border border border-solid border-neutral-border-weak xs:h-[84px] xs:w-[84px]"
+  >
+    <a class="block w-100 h-100"  href="/r/anime/comments/4rn1pn/ever_wonder_what_makes_the_disappearance_of/" target="_self"
+  aria-label="r/anime - Ever wonder what makes The Disappearance Of Haruhi Suzumiya an absolute masterpiece? Well, I spent three months worth of weekends and recorded over four hours analyzing every single shot in the entire film. Just for you. Merry Tanabata."><faceplate-img
+    src="https://b.thumbs.redditmedia.com/Ju970ndddIHYbBoywVXmAZBquN8TJu4OVEwVm6UmEcc.jpg"
+    alt="r/anime - Ever wonder what makes The Disappearance Of Haruhi Suzumiya an absolute masterpiece? Well, I spent three months worth of weekends and recorded over four hours analyzing every single shot in the entire film. Just for you. Merry Tanabata."
+    class="h-full w-full object-cover"
+    
+    
+    
+  ></faceplate-img></a><div class="absolute inset-0 rounded-[8px] thumbnail-shadow pointer-events-none"><div
+    class="absolute bottom-0 bg-media-background text-media-onbackground w-100 text-center truncate px-xs box-border"
+  >
+    youtube
+  </div></div>
+  </div>
+      </div>
+    </div>
+  
+            </faceplate-tracker>
+          
+      
+    <div class="min-w-full mt-2xs truncate">
+      <div class="text-neutral-content-weak text-12">
+        
+      <faceplate-number number="834" pretty></faceplate-number>
+      upvotes
+    
+        <span class="mr-2xs ml-2xs">·</span>
+        
+      <faceplate-number number="106" pretty></faceplate-number>
+      <span >comments</span>
+    
+      </div>
+    </div>
+  
+    </div>
+  
+              <hr class="w-100 my-sm border-neutral-border-weak" />
+            </reddit-pdp-right-rail-post>
+          </li>
+        
+          <li>
+            
+            
+
+            <reddit-pdp-right-rail-post
+              class="nd:visible"
+              event-data="%7B%22correlation_id%22%3A%222c0d95f5-fabf-4c94-a0b4-484d8b3f8c07%22%2C%22experiment%22%3A%7B%22name%22%3A%22platformex_listing_below_popular_posts%22%7D%2C%22ml_model%22%3A%7B%22name%22%3A%22search_nlp%22%2C%22features%22%3A%22%7B%5C%22host_post_id%5C%22%3A%5C%22t3_18637ow%5C%22%7D%22%7D%2C%22action_info%22%3A%7B%22position%22%3A5%7D%2C%22post%22%3A%7B%22archived%22%3Afalse%2C%22created_timestamp%22%3A1565637715973%2C%22id%22%3A%22t3_cph60o%22%2C%22nsfw%22%3Afalse%2C%22number_comments%22%3A38%2C%22promoted%22%3Afalse%2C%22score%22%3A1495%2C%22subreddit_id%22%3A%22t5_2rnhi%22%2C%22subreddit_name%22%3A%22gorillaz%22%2C%22title%22%3A%22Man%2C%20i%20can&#39;t%20describe%20how%20beautiful%20and%20sad%20this%20music%20is...%22%2C%22type%22%3A%22image%22%7D%2C%22subreddit%22%3A%7B%22id%22%3A%22t5_2rnhi%22%2C%22name%22%3A%22gorillaz%22%7D%7D"
+              post-id="t3_18637ow"
+            >
+              
+    <div>
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <div class="flex text-neutral-content text-12">
+      <div class="flex flex-col grow">
+        
+    <div class="items-center">
+      
+    <shreddit-async-loader bundleName="faceplate_hovercard">
+      <faceplate-hovercard
+        class="nd:visible"
+        position="bottom-start"
+        data-id="community-hover-card"
+        aria-label="r/gorillaz"
+      >
+        <faceplate-tracker
+              source="post_detail"
+              action="click"
+              noun="post"
+              class="visible"
+            >
+              <a rpl
+      class="flex items-center min-w-0 text-neutral-content-weak hover:text-neutral-content-weak a
+  
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/gorillaz"
+      >
+      <div class="flex flex-shrink-0 w-lg h-lg">
+        <faceplate-img
+    src="https://styles.redditmedia.com/t5_2rnhi/styles/communityIcon_9gbwcgljfn991.png"
+    alt="r/gorillaz icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background text-24 leading-5 h-full w-full"
+    width="24"
+    height="24"
+    
+    loading="lazy"
+    
+    
+    style="color: #373C3F; background-color: #373C3F"
+  ></faceplate-img>
+      </div>
+      <div class="ml-xs truncate">r/gorillaz</div>
+    </a
+    >
+            </faceplate-tracker>
+        <div slot="content" class="max-w-[360px] w-[90vw] overflow-hidden p-0 -m-[0.5rem]">
+          <div class="flex flex-col">
+            <div class="h-[80px] w-auto overflow-hidden relative rounded-t-[16px]">
+                  <faceplate-img
+    src="https://styles.redditmedia.com/t5_2rnhi/styles/bannerBackgroundImage_20tnc374a6w81.png"
+    alt="A banner for the subreddit"
+    class="w-auto h-full object-cover absolute"
+    
+    
+    
+  ></faceplate-img>
+                </div>
+            <div class="px-sm pt-sm flex items-center">
+              <span class="w-[48px] h-[48px] text-24 shrink-0"
+                ><faceplate-img
+    src="https://styles.redditmedia.com/t5_2rnhi/styles/communityIcon_9gbwcgljfn991.png"
+    alt="r/gorillaz icon"
+    class="shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background "
+    width="48"
+    height="48"
+    
+    loading="lazy"
+    
+    
+    style="color: #373C3F; background-color: #373C3F"
+  ></faceplate-img></span
+              >
+              <span class="flex flex-col ml-xs grow-0 w-100">
+                <faceplate-tracker source="subreddit_hovercard" action="click" noun="title">
+                  <a rpl
+      class="text-18 font-bold text-neutral-content-strong leading-6 a
+  text-14
+  
+  no-visited
+  hover:underline
+  "
+      href="/r/gorillaz/"
+      >r/gorillaz</a
+    >
+                </faceplate-tracker>
+              </span>
+              <faceplate-tracker
+                    class="ml-auto"
+                    source="subreddit_hovercard"
+                    action="click"
+                    noun="join_signup_cta"
+                  >
+                    <shreddit-join-button
+                      subreddit-id="t5_2rnhi"
+                      name="gorillaz"
+                      buttonsize="x-small"
+                      button-type="secondary"
+                    ></shreddit-join-button>
+                  </faceplate-tracker>
+            </div>
+            <p class="px-md pt-md m-0 whitespace-normal text-14 leading-5 font-normal">
+              The subreddit for Gorillaz fans. Music, art, and discussions. It&#39;s all here!
+            </p>
+            <hr class="mx-md pt-md border-neutral-border-weak" />
+            <div class="px-md py-md flex items-center">
+              <span class="flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="260669" pretty></faceplate-number>
+                </span>
+                <span class="text-12 leading-4 text-neutral-content-weak"
+                  >Members</span
+                >
+              </span>
+              <span data-testid="community-hover-card:active-count" class="ml-xl flex flex-col">
+                <span class="text-14 text-neutral-content leading-5 font-semibold">
+                  <faceplate-number number="207" pretty></faceplate-number>
+                </span>
+                <span class="flex items-center">
+                  <span class="bg-kiwigreen-400 rounded-full w-xs h-xs"></span>
+                  <span class="text-12 leading-4 text-neutral-content-weak ml-2xs"
+                    >Online</span
+                  >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </faceplate-hovercard>
+    </shreddit-async-loader>
+  
+    </div>
+  
+        
+    <div class="flex">
+      
+            <faceplate-tracker
+              source="post_detail"
+              action="view"
+              noun="post"
+            >
+              
+    <a rpl
+      class="flex flex-wrap group
+                  text-neutral-content-weak
+                  hover:text-neutral-content-weak
+                  dark:text-neutral-content-strong
+                  dark:hover:text-neutral-content-strong
+                  xs:dark:text-neutral-content-weak
+                  xs:dark:hover:text-neutral-content-weak
+                 a
+  
+  
+  no-visited
+  no-underline hover:no-underline
+  "
+      href="/r/gorillaz/comments/cph60o/man_i_cant_describe_how_beautiful_and_sad_this/"
+      > <div class="flex grow min-w-0 mb-2xs mt-2xs">
+        <div class="flex flex-col gap-2xs grow mt-2xs">
+          
+          <h3
+            class="text-14 line-clamp-2 m-0 font-semibold overflow-hidden group-hover:underline"
+            title="Man, i can&#39;t describe how beautiful and sad this music is..."
+            aria-label="Right rail post - Man, i can&#39;t describe how beautiful and sad this music is..."
+          >
+            Man, i can&#39;t describe how beautiful and sad this music is...
+          </h3>
+        </div>
+      </div></a
+    >
+  
+            </faceplate-tracker>
+          
+    </div>
+  
+      </div>
+      <div class="flex shink-0 ml-sm">
+        <div
+    
+    class="relative rounded-[8px] overflow-hidden box-border border border-solid border-neutral-border-weak xs:h-[84px] xs:w-[84px]"
+  >
+    <a class="block w-100 h-100"  href="/r/gorillaz/comments/cph60o/man_i_cant_describe_how_beautiful_and_sad_this/" target="_self"
+  aria-label="r/gorillaz - Man, i can&#39;t describe how beautiful and sad this music is..."><faceplate-img
+    src="https://b.thumbs.redditmedia.com/1X6UeIDtfIOS6RVfhb537fw-3k0xP9570MyJyjooJlc.jpg"
+    alt="r/gorillaz - Man, i can&#39;t describe how beautiful and sad this music is..."
+    class="h-full w-full object-cover"
+    
+    
+    
+  ></faceplate-img></a><div class="absolute inset-0 rounded-[8px] thumbnail-shadow pointer-events-none"> <div
+    class="absolute bottom-0 bg-media-background text-media-onbackground m-[4px] rounded-full h-[20px] w-[20px] flex items-center justify-center"
+  >
+    <svg rpl
+      class="h-[12px] w-[12px]"
+      fill="currentColor"
+      height="20"
+      icon-name="image-post-fill"
+      viewBox="0 0 20 20"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m7.935 12.305 6.7 6.7h-12A1.626 1.626 0 0 1 1 17.375v-.946l.022.022 4.146-4.146a1.96 1.96 0 0 1 2.767 0ZM19 2.625v14.75a1.623 1.623 0 0 1-1.565 1.619l.008-.009-8.094-8.094a3.961 3.961 0 0 0-5.6 0L1 13.645V2.625A1.627 1.627 0 0 1 2.625 1h14.75A1.627 1.627 0 0 1 19 2.625ZM15.5 7a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path>
+    </svg>
+  </div></div>
+  </div>
+      </div>
+    </div>
+  
+            </faceplate-tracker>
+          
+      
+    <div class="min-w-full mt-2xs truncate">
+      <div class="text-neutral-content-weak text-12">
+        
+      <faceplate-number number="1495" pretty></faceplate-number>
+      upvotes
+    
+        <span class="mr-2xs ml-2xs">·</span>
+        
+      <faceplate-number number="38" pretty></faceplate-number>
+      <span >comments</span>
+    
+      </div>
+    </div>
+  
+    </div>
+  
+              
+            </reddit-pdp-right-rail-post>
+          </li>
+        
+    
+  </ul>
+            </faceplate-tracker>
+          
+    </div>
+  
+    <div slot="page-2" data-slug="memes">
+      
+    <faceplate-partial loading="programmatic" src="/svc/shreddit/pdp-right-rail/topic/memes/t3_18637ow"
+      ><shreddit-loading></shreddit-loading
+    ></faceplate-partial>
+  
+    </div>
+  
+    <div slot="page-3" data-slug="internet_culture_and_memes">
+      
+    <faceplate-partial loading="programmatic" src="/svc/shreddit/pdp-right-rail/topic/internet_culture_and_memes/t3_18637ow"
+      ><shreddit-loading></shreddit-loading
+    ></faceplate-partial>
+  
+    </div>
+  
+      </faceplate-tabpanel>
+    </pdp-right-rail>
+  
