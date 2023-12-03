@@ -1,5 +1,0 @@
-<shreddit-forbidden
-      server_error="true"
-    >
-      <span slot="title">Oops, something went wrong, please try again later.</span>
-    </shreddit-forbidden>
