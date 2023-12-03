@@ -43,16 +43,7 @@
 
 <body>
 
-<h1>Search CNN!</h1>
-
-<p>
-The command that was run to collect these documents was ‘wget -r 3 https://www.cnn.com/entertainment’. Although this collection started in the CNN’s Entertainment site, 
-the crawl was recursive so documents from all the industries CNN covers were indexed.
-<br/>
-
-<br/>
-For example, you can query for anything from ‘Timothee Chalamet’ to ‘Gaza’.
-</p>
+<h1>Search AP News!</h1>
 
 <form action="search.php" method="post">
 	<input type="text" class="search-box" size=40 name="search_string" placeholder="Search Anything!" value="<?php echo $_POST["search_string"];?>"/>
@@ -67,7 +58,7 @@ For example, you can query for anything from ‘Timothee Chalamet’ to ‘Gaza�
 
 			fwrite($qfile, "import pyterrier as pt\nif not pt.started():\n\tpt.init()\n\n");
 			fwrite($qfile, "import pandas as pd\nqueries = pd.DataFrame([[\"q1\", \"$search_string\"]], columns=[\"qid\",\"query\"])\n");
-			fwrite($qfile, "index = pt.IndexFactory.of(\"./final_index/\")\n");
+			fwrite($qfile, "index = pt.IndexFactory.of(\"./ap-index/\")\n");
 			fwrite($qfile, "tf_idf = pt.BatchRetrieve(index, wmodel=\"TF_IDF\")\n");
 			fwrite($qfile, "results = tf_idf.transform(queries)\n");
 
