@@ -114,7 +114,7 @@
 
 <div class="search-results">
 	<?php
-    
+		
         if (isset($_POST["search_string"])) {
             $search_string = $_POST["search_string"];
             $qfile = fopen("query.py", "w");
@@ -127,7 +127,9 @@
 
             for ($i=0; $i<10; $i++) {
                 fwrite($qfile, "\nprint(index.getMetaIndex().getItem(\"filename\",results.docid[$i]))\n");
-                fwrite($qfile, "print(index.getMetaIndex().getItem(\"title\",results.docid[$i]))\n");
+                fwrite($qfile, "if index.getMetaIndex().getItem(\"title\", results.docid[$i]).strip() != \"\":\n");
+		        fwrite($qfile, "\tprint(index.getMetaIndex().getItem(\"title\",results.docid[$i]))\n");
+                fwrite($qfile, "else:\n\tprint(index.getMetaIndex().getItem(\"filename\",results.docid[$i]))\n");
                 fwrite($qfile, "print(index.getMetaIndex().getItem(\"text\",results.docid[$i]))\n");
             }
 
