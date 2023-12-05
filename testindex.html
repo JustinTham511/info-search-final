@@ -47,19 +47,15 @@
 
 <form action="search.php" method="post">
 	<input type="text" class="search-box" size=40 name="search_string" placeholder="Search Anything!" value="<?php echo $_POST["search_string"];?>"/>
-	<input type="text" class="user-box" size=40 name="user_string" placeholder="Enter Username" value="<?php echo $_POST["user_string"];?>"/>
 	<input type="submit" class="search-button" value="Search"/>
 </form>
 
 <div class="search-results">
-	<?php
+	<!-- <?php
 		if (isset($_POST["search_string"])) {
 			$search_string = $_POST["search_string"];
-			$user_string = $_POST["user_string"];
 			$qfile = fopen("query.py", "w");
-			$ufile = fopen("$user_string.txt", "w");
-			
-			fwrite($ufile, $search_string);
+
 			fwrite($qfile, "import pyterrier as pt\nif not pt.started():\n\tpt.init()\n\n");
 			fwrite($qfile, "import pandas as pd\nqueries = pd.DataFrame([[\"q1\", \"$search_string\"]], columns=[\"qid\",\"query\"])\n");
 			fwrite($qfile, "index = pt.IndexFactory.of(\"./ap-index/\")\n");
@@ -73,10 +69,9 @@
 				fwrite($qfile, "else:\n\tprint(index.getMetaIndex().getItem(\"filename\",results.docid[$i]))\n");
    			}
    
-			fclose($ufile);
    			fclose($qfile);
 
-   			exec("ls | nc -u 127.0.0.1 10032");
+   			exec("ls | nc -u 127.0.0.1 10017");
    			sleep(3);
 
    			$stream = fopen("output", "r");
@@ -95,7 +90,7 @@
   			exec("rm query.py");
   			exec("rm output");
    			}
-	?>
+	?> -->
 </div>
 
 </body>
