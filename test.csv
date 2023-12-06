@@ -1,1 +1,3 @@
-query, docid, count
+query,docid,count
+test,0,3
+washington huskies,1,0

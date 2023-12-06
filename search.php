@@ -116,11 +116,25 @@
 	<?php
 		if (isset($_POST["search_string"])) {
 			$search_string = $_POST["search_string"];
-			$user_string = $_POST["user_string"];
-			$qfile = fopen("query.py", "w");
+			$user_string = $_POST["username"];
+
 			$ufile = fopen("$user_string.txt", "w");
 			
-			fwrite($ufile, $search_string);
+            fwrite($ufile, "import pandas as pd\n")
+            fwrite($ufile, "path = 'test.csv'\n")
+            fwrite($ufile, "df = pd.read_csv(path)\n")
+            fwrite($ufile, "query = $search_string\n")
+            fwrite($ufile, "if query not in df['query'].values:\n")
+            fwrite($ufile, "\tdf.loc[len(df)] = {'query': query, 'docid': 1, 'count': 0}\n")
+            fwrite($ufile, "else:\n")
+            fwrite($ufile, "\tdf.loc[df['query'] == query, 'count'] += 1\n")
+            fwrite($ufile, "df.to_csv(path, index=False)")
+
+            fclose($ufile);
+
+            
+            $qfile = fopen("query.py", "w");
+
 			fwrite($qfile, "import pyterrier as pt\nif not pt.started():\n\tpt.init()\n\n");
 			fwrite($qfile, "import pandas as pd\nqueries = pd.DataFrame([[\"q1\", \"$search_string\"]], columns=[\"qid\",\"query\"])\n");
 			fwrite($qfile, "index = pt.IndexFactory.of(\"./ap-index/\")\n");
@@ -135,7 +149,6 @@
                 fwrite($qfile, "print(index.getMetaIndex().getItem(\"text\",results.docid[$i]))\n");
             }
 
-			fclose($ufile);
             fclose($qfile);
 
    			exec("ls | nc -u 127.0.0.1 10032");
