@@ -6,7 +6,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;700;900&family=Open+Sans&family=Raleway:wght@400;600;700;800&display=swap"
         rel="stylesheet">
-    <title>Sydney's Search</title>
+    <title>AP News Search</title>
     <style>
         * {
             margin: 0;
@@ -118,19 +118,19 @@
 			$search_string = $_POST["search_string"];
 			$user_string = $_POST["username"];
 
-			$ufile = fopen("$user_string.txt", "w");
+			// $ufile = fopen("userlog.py", "w");
 			
-            fwrite($ufile, "import pandas as pd\n")
-            fwrite($ufile, "path = 'test.csv'\n")
-            fwrite($ufile, "df = pd.read_csv(path)\n")
-            fwrite($ufile, "query = $search_string\n")
-            fwrite($ufile, "if query not in df['query'].values:\n")
-            fwrite($ufile, "\tdf.loc[len(df)] = {'query': query, 'docid': 1, 'count': 0}\n")
-            fwrite($ufile, "else:\n")
-            fwrite($ufile, "\tdf.loc[df['query'] == query, 'count'] += 1\n")
-            fwrite($ufile, "df.to_csv(path, index=False)")
+            // fwrite($ufile, "import pandas as pd\n");
+            // fwrite($ufile, "path = 'test.csv'\n");
+            // fwrite($ufile, "df = pd.read_csv(path)\n");
+            // fwrite($ufile, "query = $search_string\n");
+            // fwrite($ufile, "if query not in df['query'].values:\n");
+            // fwrite($ufile, "\tdf.loc[len(df)] = {'query': query, 'docid': 1, 'count': 0}\n");
+            // fwrite($ufile, "else:\n");
+            // fwrite($ufile, "\tdf.loc[df['query'] == query, 'count'] += 1\n");
+            // fwrite($ufile, "df.to_csv(path, index=False)");
 
-            fclose($ufile);
+            // fclose($ufile);
 
             
             $qfile = fopen("query.py", "w");
@@ -198,6 +198,7 @@
             
             fclose($stream);
 
+            // exec("rm userlog.py");
             exec("rm query.py");
             exec("rm output");
         }
