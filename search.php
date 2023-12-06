@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
@@ -106,7 +107,7 @@
     <header>
         <h1>AP News Crawl</h1>
         <form action="search.php" class="search-container" method="post">
-			<input type="text" class="username-box" name="username" placeholder="Username" value="<?php echo $_POST["username"];?>" required />
+			<!-- <input type="text" class="username-box" name="username" placeholder="Username" value="<?php echo $_POST["username"];?>" required /> -->
 			<input type="text" class="search-box" name="search_string" placeholder="Search AP News!" value="<?php echo $_POST["search_string"];?>" required />
 			<input type="submit" class="search-button" value="Search"/>
 		</form>
@@ -114,16 +115,36 @@
 
 <div class="search-results">
 	<?php
+        // error_reporting(E_ALL);
+        // ini_set('display_errors', '1');
+        exec("sort -r logs.txt | uniq -c > top_queries.txt");
+
+            $log_file = fopen("top_queries.txt", "r");
+
+            if($log_file) {
+                $lineCount = 0;
+                $topqueries = '<ul>';
+                while (($line = fgets($log_file)) !== false && $lineCount < 5) {
+                    $query = substr($line, 8);
+                    $allLines .= "<li>$query</li>";
+                    // $allLines .= "<p>$line<p>";
+                    $lineCount++;
+                }
+                echo "<h2>Trending Queries</h2>";
+                $allLines .= "</ul>";
+                echo $allLines;
+            }
+    
 		if (isset($_POST["search_string"])) {
 			$search_string = $_POST["search_string"];
-			$user_string = $_POST["username"];
+            $path = 'test.csv';
 
 			// $ufile = fopen("userlog.py", "w");
 			
             // fwrite($ufile, "import pandas as pd\n");
-            // fwrite($ufile, "path = 'test.csv'\n");
+            // fwrite($ufile, "path = './test.csv'\n");
             // fwrite($ufile, "df = pd.read_csv(path)\n");
-            // fwrite($ufile, "query = $search_string\n");
+            // fwrite($ufile, "query = \"$search_string\"\n");
             // fwrite($ufile, "if query not in df['query'].values:\n");
             // fwrite($ufile, "\tdf.loc[len(df)] = {'query': query, 'docid': 1, 'count': 0}\n");
             // fwrite($ufile, "else:\n");
@@ -132,7 +153,36 @@
 
             // fclose($ufile);
 
-            
+            // $csvData = array_map('str_getcsv', file($path));
+            // $header = array_shift($csvData);
+            // $csvArray = array_map(function($row) use ($header) {
+            //     return array_combine($header, $row);
+            // }, $csvData);
+            // var_dump($csvArray);
+
+            // $found = false;
+            // foreach ($csvArray as &$row) {
+            //     if ($row['query'] === $search_string) {
+            //         $row['count']++;
+            //         $found = true;
+            //         break;
+            //     }
+            // }
+
+            // if (!$found) {
+            //     $csvArray[] = array('query' => $search_string, 'docid' => 1, 'count' => 0);
+            // }
+
+            // $file = fopen($path, 'w');
+            // fputcsv($file, $header);
+            // foreach ($csvArray as $row) {
+            //     fputcsv($file, $row);
+            // }
+            // fclose($file);
+            file_put_contents("logs.txt", $search_string.PHP_EOL, FILE_APPEND | LOCK_EX);
+
+            fclose($log_file);
+
             $qfile = fopen("query.py", "w");
 
 			fwrite($qfile, "import pyterrier as pt\nif not pt.started():\n\tpt.init()\n\n");
@@ -151,7 +201,7 @@
 
             fclose($qfile);
 
-   			exec("ls | nc -u 127.0.0.1 10032");
+   			exec("ls | nc -u 127.0.0.1 10017");
    			sleep(3);
 
             $stream = fopen("output", "r");
@@ -198,7 +248,7 @@
             
             fclose($stream);
 
-            // exec("rm userlog.py");
+            exec("rm userlog.py");
             exec("rm query.py");
             exec("rm output");
         }
